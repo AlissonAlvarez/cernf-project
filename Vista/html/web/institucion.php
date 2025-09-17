@@ -7,52 +7,57 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
         <title><?php echo PROYECTO; ?></title>
-        <link rel="icon" href="../vista/imagenes/logo_icono.ico" type="image/ico" />
+        <link rel="icon" href="../vista/imagenes/logo2.png" type="image/ico" />
 
         <link rel="stylesheet" href="../vista/css/normalize.css" />
         <link rel="stylesheet" href="../vista/css/estilos_web.css" />
         <link rel="stylesheet" href="../vista/css/font-awesome.css">
 
-        <script src="../vista/js/jquery-3.6.0.min.js"></script>
+        <!-- <script src="../vista/js/jquery-3.6.0.min.js"></script> -->
         <script src="../vista/js/jquery.validate.js"></script>
+
     </head>
 
     <body>
 
         <!--=================================header=================================-->
         <header>
-
-            <div class="contenedor_encabezado">
-                <img src="../vista/imagenes/Encabezado.png" alt="" class="encabezado">
-                <a href="Controlador.php?accion=inicio"><img src="../vista/imagenes/Logo.png" class="logo" alt=""></a>
-                <h1 class="textologo">CENTRO EDUCATIVO RURAL NICOLÁS DE FEDERMÁN</h1>
-            </div>
-
             <div class="contenedor_redessociales">
-                <ul>
-                    <li><a href="#"><img src="../vista/imagenes/boton_social_facebook.png" alt="#" class="boton_social" /></a>
-                    </li>
-                    <li><a href="#"><img src="../vista/imagenes/boton_social_twitter.png" alt="#" class="boton_social" /></a>
-                    </li>
-                    <li><a href="#"><img src="../vista/imagenes/boton_social_linkedin.png" alt="#" class="boton_social" /></a>
-                    </li>
-                </ul>
-            </div>
+                <div class="redes-sociales">
+                    <a href="#"><img src="../vista/svg/facebook.svg" alt="Facebook" class="boton_social" /></a>
+                    <a href="#"><img src="../vista/svg/twitter.svg" alt="Twitter" class="boton_social" /></a>
+                    <a href="#"><img src="../vista/svg/instagram.svg" alt="Instagram" class="boton_social" /></a>
+                </div>
+            </div>            
 
             <nav class="menu">
-                <ul>
-                    <li><a href="Controlador.php?accion=inicio" class="menu_inicio">Inicio</a></li>
-                    <li><a href="Controlador.php?accion=institucion" class="menu_institucion">Institución</a></li>
-                    <li><a href="Controlador.php?accion=servicios" class="menu_servicios">Servicios</a></li>
-                    <li><a href="Controlador.php?accion=contacto" class="menu_contacto">Contácto</a></li>
-                    <li><a href="Controlador.php?accion=cuenta" class="menu_cuenta">Cuenta</a></li>
-                </ul>
-            </nav>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul>
+                <li><a href="Controlador.php?accion=inicio" class="menu_inicio">Inicio</a></li>
+                <li><a href="Controlador.php?accion=institucion" class="menu_institucion">Institución</a></li>
+                <li><a href="Controlador.php?accion=servicios" class="menu_servicios">Servicios</a></li>
+                <li><a href="Controlador.php?accion=contacto" class="menu_contacto">Contácto</a></li>
+                <li><a href="Controlador.php?accion=cuenta" class="menu_cuenta">Cuenta</a></li>
+            </ul>
+        </nav>
+
 
         </header>
 
         <!--==================================main==================================-->
         <main class="main_institucion">
+
+            <div class="contenedor_encabezado">
+                <a href="Controlador.php?accion=inicio"><img src="../vista/imagenes/Logo.png" class="logo" alt=""></a>
+                <h1 class="textologo">CENTRO EDUCATIVO RURAL NICOLÁS DE FEDERMÁN</h1>
+            </div>
+            
             <section id="blog" class="content-section">
                 <div class="section-heading">
                     <h1>Quiénes<em> Somos</em></h1>
@@ -139,77 +144,79 @@
             </section>
         </section>
     </main>
+        <script src="../vista/js/jquery_slider.js"></script>
+
 
     <!--=================================footer=================================-->
 
     <footer>
 
-        <div class="contenedor_footer">
-            <div class="footer_informacion">
+            <div class="contenedor_footer">
+                <div class="footer_informacion">
 
-                <div class="columna1">
-                    <div>
-                        <img src="../vista/imagenes/logo.png" class="logo_footer">
+                    <div class="columna1">
+                        <div>
+                            <img src="../vista/imagenes/logo-1.png" class="logo_footer">
+                        </div>
+
                     </div>
 
-                </div>
+                    <div class="columna2">
 
-                <div class="columna2">
+                        <h1>Redes Sociales</h1>
 
-                    <h1>Redes Sociales</h1>
+                        <div class="fila">
+                            <img src="../vista/svg/facebook.svg" class="boton_social_footer">
+                            <label>Siguenos en Facebook</label>
+                        </div>
+                        <div class="fila">
+                            <img src="../vista/svg/twitter.svg" class="boton_social_footer">
+                            <label>Siguenos en Twitter</label>
+                        </div>
+                        <div class="fila">
+                            <img src="../vista/svg/instagram.svg" class="boton_social_footer">
+                            <label>Siguenos en Linkedin</label>
+                        </div>
 
-                    <div class="fila">
-                        <img src="../vista/imagenes/boton_social_facebook.png">
-                        <label>Siguenos en Facebook</label>
-                    </div>
-                    <div class="fila">
-                        <img src="../vista/imagenes/boton_social_twitter.png">
-                        <label>Siguenos en Twitter</label>
-                    </div>
-                    <div class="fila">
-                        <img src="../vista/imagenes/boton_social_linkedin.png">
-                        <label>Siguenos en Linkedin</label>
-                    </div>
-
-                </div>
-
-                <div class="columna3">
-
-                    <h1>Información de Contacto</h1>
-
-                    <div class="fila">
-                        <img src="../vista/imagenes/boton_contacto_direccion.png">
-                        <label>Vereda El Encanto, Guamal</label>
                     </div>
 
-                    <div class="fila">
-                        <img src="../vista/imagenes/boton_contacto_telefono.png">
-                        <label>+57-313-809-8754</label>
-                    </div>
+                    <div class="columna3">
 
-                    <div class="fila">
-                        <img src="../vista/imagenes/boton_contacto_correo.png">
-                        <label>cernf@gmail.com</label>
+                        <h1>Información de Contacto</h1>
+
+                        <div class="fila">
+                            <img src="../vista/svg/location.svg">
+                            <label>Vereda El Encanto, Guamal</label>
+                        </div>
+
+                        <div class="fila">
+                            <img src="../vista/svg/phone.svg">
+                            <label>+57-313-809-8754</label>
+                        </div>
+
+                        <div class="fila">
+                            <img src="../vista/svg/mail.svg">
+                            <label>cernf@gmail.com</label>
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
+            <div class="contenedor_copyright">
+                <div class="footer_copyright">
+                    <div class="copyright">
+                        <h4>© 2025 Todos los Derechos Reservados | <a href="#">CENTRO EDUCATIVO RURAL NICOLÁS DE FEDERMÁN</a></h4>
+                    </div>
 
-        <div class="contenedor_copyright">
-            <div class="footer_copyright">
-                <div class="copyright">
-                    <h4>© 2021 Todos los Derechos Reservados | <a href="#">Grupo 6 ADSI SENA</a></h4>
                 </div>
 
             </div>
 
-        </div>
-
-    </footer>
-
+        </footer>
+    
 </body>
 
 </html>
