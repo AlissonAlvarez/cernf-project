@@ -61,7 +61,7 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none fw-bold"
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
                         data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
@@ -73,7 +73,7 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none fw-bold"
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
                         data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
@@ -84,7 +84,7 @@
                                 class="d-block px-3 py-2 text-dark text-decoration-none">Gestión de Docentes</a></li>
 
                         <li id="submenu_gestionacademica">
-                            <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none fw-bold"
+                            <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
                                 data-bs-toggle="collapse" data-bs-target="#opciones_gestionacademica"
                                 aria-expanded="false">
                                 Gestión Académica <span class="float-end">&#9660;</span>
@@ -105,13 +105,13 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none fw-bold"
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
                         data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
                         <li id="submenu_documentos">
-                            <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none fw-bold"
+                            <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
                                 data-bs-toggle="collapse" data-bs-target="#opciones_documentos" aria-expanded="false">
                                 Documentos <span class="float-end">&#9660;</span>
                             </a>

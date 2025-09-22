@@ -82,7 +82,7 @@
             <div class="contenedor_encabezado">
                 <div class="row align-items-center">
                     <div class="col-lg-12">
-                        <div class="texto_encabezado p-5 ">
+                        <div class="texto_encabezado p-5">
                             <h3 class="mb-3" style="opacity: 0.8;">
                                 Bienvenido a nuestro
                             </h3>

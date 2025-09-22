@@ -146,6 +146,17 @@ body {
   margin-top: 3rem;
 }
 
+.stat-number {
+  font-size: 40px;
+  color: var(--secondary_color);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.stat-label {
+  font-size: 22px;
+}
+
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -929,7 +940,7 @@ textarea.form-control {
   background: var(--color_white);
   border: 2px solid var(--secondary_color);
   border-radius: 24px;
-  bottom: 80px;
+  bottom: 34px;
 }
 
 .contenedor_boton {
@@ -981,8 +992,13 @@ textarea.form-control {
     top: -60px;
   }
 
+  .formulario_ingresar, .formulario_validar {
+    min-height: 420px;
+    bottom: 80px;
+  }
+
   .contenedor_boton {
-        height: 70vh;
+    height: 70vh;
   }
 
   .contenedor_boton_ingresar,

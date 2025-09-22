@@ -101,7 +101,6 @@
 
             <div class="contenedor_formulario row position-relative" style="transition: transform 0.5s ease;">
 
-                <!-- Formulario Ingresar -->
                 <form class="formulario_ingresar col-12 col-md-5" id="formulario_ingresar" name="formulario_ingresar"
                     action="Controlador.php" method="POST" style="transition: opacity 0.5s;">
                     <div class="titulo_formulario mb-4">
@@ -134,7 +133,6 @@
                     </div>
                 </form>
 
-                <!-- Formulario Validar -->
                 <form class="formulario_validar col-12 col-md-5" id="formulario_validar" name="formulario_validar"
                     action="" method="" style="transition: opacity 0.5s;">
                     <div class="titulo_formulario mb-4">

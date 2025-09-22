@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-        <title><?php echo PROYECTO; ?></title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-        <link rel="icon" href="../vista/imagenes/logo2.png" type="image/ico" />
+    <title><?php echo PROYECTO; ?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" href="../vista/imagenes/logo2.png" type="image/ico" />
 
-        <link rel="stylesheet" href="../vista/css/normalize.css" />
-        <link rel="stylesheet" href="../vista/css/estilos_webcopy.css" />
-        <link rel="stylesheet" href="../vista/css/font-awesome.css">
+    <link rel="stylesheet" href="../vista/css/normalize.css" />
+    <link rel="stylesheet" href="../vista/css/estilos_webcopy.css" />
+    <link rel="stylesheet" href="../vista/css/font-awesome.css">
 
-        <script src="../vista/js/jquery-3.6.0.min.js"></script>
-        <script src="../vista/js/jquery.validate.js"></script>
-        <script src="../vista/js/jquery_slider.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
+    <script src="../vista/js/jquery-3.6.0.min.js"></script>
+    <script src="../vista/js/jquery.validate.js"></script>
+    <script src="../vista/js/jquery_slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <!--=================================header=================================-->
-        <header class="fixed-top">
+    <!--=================================header=================================-->
+    <header class="fixed-top">
 
         <div class="barra_nav border-bottom">
             <div class="container d-flex justify-content-start py-1 gap-3">
@@ -68,30 +68,30 @@
         </nav>
     </header>
 
-        <!--==================================main==================================-->
-        <main class="main_contacto">
+    <!--==================================main==================================-->
+    <main class="main_contacto">
 
-            <a href="#" class="btn btn-primary back-to-top d-flex align-items-center justify-content-center">
-                <i class="bi bi-arrow-up"></i>
-            </a>
+        <a href="#" class="btn btn-primary back-to-top d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up"></i>
+        </a>
 
         <!--================= 1. Seccion Banner  =================-->
-            <section id="contacto" class="seccion_uno_intitucion">
-                <img src="../vista/imagenes/niños3.jpg" class="imagen_intitucion" />
-                <div class="contenido">
-                    <h1 class="titulo_banner">Contacto</h1>
-                    <p>Escribenos y tu respuesta llega a tu correo</p>
-                </div>
-            </section>
+        <section id="contacto" class="seccion_uno_intitucion">
+            <img src="../vista/imagenes/niños3.jpg" class="imagen_intitucion" />
+            <div class="contenido">
+                <h1 class="titulo_banner">Contacto</h1>
+                <p>Escribenos y tu respuesta llega a tu correo</p>
+            </div>
+        </section>
 
-            <div class="contenido_contacto" id="contentido_contacto">
-                <h1 class="titulo">Contáctanos y encuentra tu sede más cercana.</h1>
-                        <div class="contact-container">
+        <div class="contenido_contacto" id="contentido_contacto">
+            <h1 class="titulo">Contáctanos y encuentra tu sede más cercana.</h1>
+            <div class="contact-container">
                 <h1 class="form-title">Escribenos</h1>
                 <p class="form-description">
                     Padres, estudiantes y docentes: siempre bienvenidos a comunicarse.
                 </p>
-        
+
                 <form id="contactForm">
                     <div class="mb-3 form-floating">
                         <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
@@ -109,7 +109,8 @@
                     </div>
 
                     <div class="mb-4 form-floating">
-                        <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 120px;" required></textarea>
+                        <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 120px;"
+                            required></textarea>
                         <label for="mensaje">Mensaje</label>
                     </div>
 
@@ -118,98 +119,47 @@
                     </button>
                 </form>
             </div>
-                </div>
+        </div>
 
-            <!-- <div class="contenido_contacto" id="contentido_contacto">
-                <h2>Contáctanos y encuentra tu sede más cercana.</h2>
-                <div class="box-contact">
-                    <form id="contact-form" action="#">
-                        <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
-                        <fieldset>
-                            <div class='input-image'>
-                                <div class="coll-1">
-                                    <div>
-                                        <div class="form-txt">Nombre Completo:</div>
-                                        <label class="name">
-                                            <input type="text">
-                                            <span class="error">*Este no es un nombre valido.</span> <span class="empty">*Este
-                                                campo es obligatorio.</span> </label>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div>
-                                        <div class="form-txt">Teléfono:</div>
-                                        <label class="phone">
-                                            <input type="tel">
-                                            <span class="error">*Esto no es un número de teléfono válido.</span> <span
-                                                class="empty">*This
-                                                field is required.</span> </label>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div>
-                                        <div class="form-txt">Correo:</div>
-                                        <label class="email">
-                                            <input type="email">
-                                            <span class="error">* Esta no es una dirección de correo electrónico válida.</span>
-                                            <span class="empty">*Este campo es obligatorio.</span> </label>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div>
-                                        <div class="form-txt">Mensaje:</div>
-                                        <label class="message">
-                                            <textarea></textarea>
-                                            <span class="error">*El mensaje es muy corto.</span> <span class="empty">*Este campo
-                                                es obligatorio.</span> </label>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="btns"> 
-                                        <a class="btn btn-submit"data-type="submit">Enviar</a>
-                                    </div>
-                                </div>
-                                <div class="coll-2">
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </fieldset>
-                    </form>
-                </div>-->
-                <div class="container my-4 w-75 ">
-                <div class="row">
-                    <div class="contacto col-md-12 mx-auto text-center">
+
+        <div class="container my-4 w-75 ">
+            <div class="row">
+                <div class="contacto col-md-12 mx-auto text-center">
                     <div class="mb-3">
                         <h1 for="sede" class="form-label fw-bold titulo">Selecciona una sede:</h1>
                         <select id="sede" class="form-select rounded-3">
-                        <option value="">Seleccione una sede</option>
-                        <option value="nicolasdefederman">Centro Educativo Rural Nicolás De Federman</option>
-                        <option value="antoniojosedesucre">Escuela Rural Antonio Jose De Sucre</option>
-                        <option value="eldanubio">Escuela Rural El Danubio</option>
-                        <option value="elencanto">Escuela Rural El Encanto</option>
-                        <option value="elretiro">Escuela Rural El Retiro</option>
-                        <option value="laisla">Escuela Rural La Isla</option>
-                        <option value="lapaz">Escuela Rural La Paz</option>
-                        <option value="montecristo">Escuela Rural Montecristo</option>
-                        <option value="orotoy">Escuela Rural Orotoy</option>
-                        <option value="pioxii">Escuela Rural Pio XII</option>
-                        <option value="sanpedro">Escuela Rural San Pedro</option>
-                        <option value="santaana">Escuela Rural Santa Ana</option>
-                        <option value="santabarbara">Escuela Rural Santa Bárbara</option>
+                            <option value="">Seleccione una sede</option>
+                            <option value="nicolasdefederman">Centro Educativo Rural Nicolás De Federman</option>
+                            <option value="antoniojosedesucre">Escuela Rural Antonio Jose De Sucre</option>
+                            <option value="eldanubio">Escuela Rural El Danubio</option>
+                            <option value="elencanto">Escuela Rural El Encanto</option>
+                            <option value="elretiro">Escuela Rural El Retiro</option>
+                            <option value="laisla">Escuela Rural La Isla</option>
+                            <option value="lapaz">Escuela Rural La Paz</option>
+                            <option value="montecristo">Escuela Rural Montecristo</option>
+                            <option value="orotoy">Escuela Rural Orotoy</option>
+                            <option value="pioxii">Escuela Rural Pio XII</option>
+                            <option value="sanpedro">Escuela Rural San Pedro</option>
+                            <option value="santaana">Escuela Rural Santa Ana</option>
+                            <option value="santabarbara">Escuela Rural Santa Bárbara</option>
                         </select>
                     </div>
 
                     <div id="descripcion_contacto" class="d-flex flex-column gap-3"></div>
-                    </div>
                 </div>
-                </div>
+            </div>
+        </div>
 
 
 
-        </main>
-        <script src="../vista/js/iframe.js"></script>
-        <!-- <script src="../vista/js/jquery_contacto.js"></script> -->
-        <script src="../vista/js/jquery_Slider.js"></script>
+    </main>
+    <script src="../vista/js/iframe.js"></script>
+    <!-- <script src="../vista/js/jquery_contacto.js"></script> -->
+    <script src="../vista/js/jquery_Slider.js"></script>
 
-        <!--=================================footer=================================-->
+    <!--=================================footer=================================-->
 
-        <footer class="footer" id="contact">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 d-flex flex-column gap-3 footer_informacion">
@@ -270,8 +220,8 @@
         </div>
     </footer>
 
-        <script src="../vista/js/jquery_slider.js"></script>
+    <script src="../vista/js/jquery_slider.js"></script>
 
-    </body>
+</body>
 
 </html>
