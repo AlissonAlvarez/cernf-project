@@ -149,7 +149,7 @@
 
                 <input type="hidden" name="accion" value="eliminar_docentes">
                 <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
-                <a href="Controlador.php?accion=modulo_docentes" class="btn_cancel">Cancelar</a>
+                <button type="button" class="btn_cancel" onclick="window.history.back()">Cancelar</button>
                 <input type="submit" value="Aceptar" class="btn_ok">
 
 

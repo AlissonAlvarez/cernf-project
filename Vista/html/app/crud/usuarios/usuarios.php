@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -137,94 +137,125 @@
 
     <!--==================================main==================================-->
     <main class="main_crud">
-        <div class="contenedor_tabla" id="contenedor_crud">
-            <h1>Lista de Usuarios</h1>
+        <div class="container mt-4">
+            <div class="card card-shadow">
+                <!-- Header -->
+                <div class="card-header tabla_app border-0 py-3">
+                    <h1 class="mb-3  text-dark h4">Lista de Usuarios</h1>
 
-            <div class="header_tabla">
-
-                <div class="botones_tabla">
-                    <form action="buscar_usuario.php" method="get">
-                        <a href="Controlador.php?accion=modulos" class="btn_tabla"><span
-                                class="icon-th"></span>Módulos</a>
-                        <a href="Controlador.php?accion=usuarios_insertar" class="btn_tabla"><span
-                                class="icon-plus-square"></span>Agregar</a>
-                        <a href="Controlador.php?accion=usuarios_pdf" class="btn_tabla"><span
-                                class="icon-file-pdf-o"></span>Exportar</a>
-                    </form>
+                    <!-- Botones de acción y búsqueda -->
+                    <div class="row align-items-center w-100">
+                        <div class="col-md-6">
+                            <div class="btn-group gap-3" role="group">
+                                <a href="Controlador.php?accion=modulos" class="btn btn_app  rounded-2">
+                                    <i class="bi bi-grid-3x3-gap-fill"></i> Módulos
+                                </a>
+                                <a href="Controlador.php?accion=usuarios_insertar" class="btn btn_app rounded-2">
+                                    <i class="bi bi-plus-circle-fill"></i> Agregar
+                                </a>
+                                <a href="Controlador.php?accion=usuarios_pdf" class="btn btn_app  rounded-2">
+                                    <i class="bi bi-file-earmark-pdf-fill"></i> Exportar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="buscar_usuario.php" method="get" class="form_search w-75 ">
+                                <div class="input-group">
+                                    <input type="text" name="busqueda" id="busqueda" class="form-control w-75"
+                                        placeholder="Buscar..." aria-label="Buscar">
+                                    <button class="btn" type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="buscador_tabla">
-                    <form action="buscar_usuario.php" method="get" class="form_search">
-                        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-                        <input type="submit" value="Buscar" class="btn_search">
-                    </form>
+                <!-- Tabla -->
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-yellow table-striped mb-0">
+                            <thead>
+                                <tr class="bg-yellow">
+                                    <th scope="col" class="fw-bold text-dark">Código</th>
+                                    <th scope="col" class="fw-bold text-dark">Nombre</th>
+                                    <th scope="col" class="fw-bold text-dark">Contraseña</th>
+                                    <th scope="col" class="fw-bold text-dark">Identificación</th>
+                                    <th scope="col" class="fw-bold text-dark">Opciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $p = [];
+                                $paginar = '';
+                                if (isset($_GET['pagina']) && $_GET['pagina'] != '') {
+                                    $pag = $_GET['pagina'];
+                                } else {
+                                    $pag = 0;
+                                }
+
+                                while ($d = $datos->fetch_object()) {
+                                    $data = '
+                                    <tr>
+                                        <td> ' . $d->codusuario . '</td>
+                                        <td>' . $d->usunombre . '</td>
+                                        <td>' . $d->usucontrasena . '</td>
+                                        <td>' . $d->usuidpersona . '</td>
+                                        <td>
+                                            <a href="Controlador.php?accion=usuarios_consultar&id=' . $d->codusuario . '" class="btn btn-outline-primary btn-action" title="Ver">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="Controlador.php?accion=usuarios_actualizar&id=' . $d->codusuario . '" class="btn btn-outline-success btn-action" title="Editar">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                            <a href="Controlador.php?accion=usuarios_eliminar&id=' . $d->codusuario . '" class="btn btn-outline-danger btn-action" title="Eliminar">
+                                                <i class="bi bi-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>';
+                                    array_push($p, $data);
+                                }
+
+                                for ($i = $pag; $i < count($p); $i++) {
+                                    if ($i < 10 + $pag) {
+                                        echo $p[$i];
+                                    }
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Nombre</th>
-                        <th>Contraseña</th>
-                        <th>Identificación</th>
-                        <th>Opciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                        $p = [];
-                        $paginar = '';
-                        if (isset($_GET['pagina']) && $_GET['pagina'] != '') {
-                            $pag = $_GET['pagina'];
-                        } else {
-                            $pag = 0;
-                        }
-
-                        while ($d = $datos->fetch_object()) {
-                            $data = '
-                            <tr>
-                                <td> ' . $d->codusuario . '</td>
-                                <td>' . $d->usunombre . '</td>
-                                <td>' . $d->usucontrasena . '</td>
-                                <td>' . $d->usuidpersona . '</td>
-                                <td>
-                                    <a href="Controlador.php?accion=usuarios_consultar&id=' . $d->codusuario . '" class="btn_crud"><span class="icon-eye"></span></a>
-                                    <a href="Controlador.php?accion=usuarios_actualizar&id=' . $d->codusuario . '" class="btn_crud"><span class="icon-edit"></span></a>
-                                    <a href="Controlador.php?accion=usuarios_eliminar&id=' . $d->codusuario . '" class="btn_crud"><span class="icon-trash-o"></span></a>
-                                </td>
-                            </tr>';
-                            array_push($p, $data);
-                        }
-
-                        for ($i = $pag; $i < count($p); $i++) {
-                            if ($i < 10 + $pag) {
-                                echo $p[$i];
+                <!-- Paginación -->
+                <div class="card-footer bg-white border-0">
+                    <nav aria-label="Navegación de páginas">
+                        <ul class="pagination justify-content-end mb-0">
+                            <?php
+                            $intervalo = count($p) / 10;
+                            
+                            for ($j = 1; $j <= $intervalo + 1; $j++) {
+                                $c = ($j - 1) * 10;
+                                $activeClass = '';
+                                if (isset($_GET['pagina']) && $_GET['pagina'] == $c) {
+                                    $activeClass = 'active';
+                                } elseif (!isset($_GET['pagina']) && $j == 1) {
+                                    $activeClass = 'active';
+                                }
+                                
+                                $paginar .= '<li class="page-item ' . $activeClass . '">
+                                                <a class="page-link" href="Controlador.php?accion=modulo_usuarios&pagina=' . $c . '">' . $j . '</a>
+                                            </li>';
                             }
-                        }
+                            
+                            echo $paginar;
                         ?>
-                </tbody>
-            </table>
-            <div class="paginador">
-                <ul>
-                    <?php
-                        $intervalo = count($p) / 10;
-
-                        for ($j = 1; $j <= $intervalo + 1; $j++) {
-                            $c = ($j - 1) * 10;
-                            $paginar .= '<li><a href="Controlador.php?accion=modulo_usuarios&pagina=' . $c . '">' . $j . '</a></li>';
-                        }
-                        ?>
-                    <?php
-                        echo $paginar;
-                        ?>
-                </ul>
-
+                        </ul>
+                    </nav>
+                </div>
             </div>
-
         </div>
-
     </main>
 
     <script src="../vista/js/script_aplicacion.js"></script>

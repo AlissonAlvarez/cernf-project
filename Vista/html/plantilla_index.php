@@ -38,7 +38,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a href="Controlador.php?accion=inicio">
-                    <img src="../vista/imagenes/Logo.png" class="logo" alt="">
+                    <img src="vista/imagenes/Logo.png" class="logo" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar">
@@ -57,7 +57,7 @@
                                     href="Controlador/Controlador.php?accion=institucion">Institución</a></li>
                             <li class="nav-item"><a class="nav-link"
                                     href="Controlador/Controlador.php?accion=servicios">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Controlador.php?accion=contacto">Contacto</a>
+                            <li class="nav-item"><a class="nav-link" href="Controlador/Controlador.php?accion=contacto">Contacto</a>
                             </li>
                         </ul>
                         <div class="d-flex justify-content-lg-end justify-content-center align-items-center">
