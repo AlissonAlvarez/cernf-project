@@ -32,13 +32,11 @@ body {
 .main_aplicacion {
 	display: block;
 	width: 100%;
-	height: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	background-image: url(../imagenes/fondo_aplicacion.png);
 	background-size: cover;
-	background-position: center top;
+	background-position: center;
 }
-
 
 /************************************header************************************/
 .contenedor_aplicacion {
@@ -110,6 +108,20 @@ body {
 	margin: 0 auto;
 	width: 150px;
 	margin-bottom: 10px;
+}
+
+.indicador-sesion {
+    position: absolute;
+    bottom: 30px;
+    right: 152px;
+    padding: 0.5rem;
+    background-color: var(--primary_color);
+    border: 2px solid var(--color_white);
+    border-radius: 50%;
+}
+
+.usuario-logueado {
+  color: var(--primary_color);
 }
 
 
@@ -554,3 +566,300 @@ body {
             }
         }
 
+.profile-card {
+            max-width: 900px;
+            margin: 0 auto;
+            height: auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .card-header-custom {
+            background: #c1c1c1;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border: none;
+        }
+        .card-header-custom h4 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--color_black);
+        }
+        .profile-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .profile-sidebar {
+            background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px 30px;
+            text-align: center;
+            flex: 0 0 320px;
+        }
+        .profile-main {
+            flex: 1;
+            padding: 40px;
+            background: white;
+        }
+        .profile-image-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .badge-verified {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: #28a745;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid white;
+            font-size: 20px;
+        }
+        .profile-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .profile-role {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .profile-company {
+            color: var(--quaternary_color);
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 25px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--quaternary_color);
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+        }
+        .info-section {
+            margin-bottom: 30px;
+        }
+        .info-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .info-title i {
+            color: var(--quaternary_color);
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--quaternary_color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+        .info-content {
+            flex: 1;
+        }
+        .info-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+        .info-value {
+            font-size: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+        .tags-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .tag {
+            background: var(--quaternary_color);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .bio-text {
+            color: #666;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn-custom {
+            flex: 1;
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .btn-back {
+            background: #6c757d;
+            color: white;
+            border: none;
+        }
+        .btn-back:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+        }
+        .btn-logout {
+            background: var(--quaternary_color);
+            color: var(--color_white);
+            border: none;
+        }
+        .btn-logout:hover {
+            background: var(--quaternary_color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(245, 208, 87, 0.4);
+            color: var(--color_black);
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn-contact {
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            color: #333;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+        .btn-contact:hover {
+            border-color: var(--quaternary_color);
+            color: var(--quaternary_color);
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .profile-content {
+                flex-direction: column;
+            }
+            .profile-sidebar {
+                flex: 1;
+            }
+        }
+
+/************************************splash************************************/
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(135deg, #2596be, #016936);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+
+.splash-logo {
+  display: block;
+  width: 100%;
+  top: 40px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.loading-fill {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.6), transparent);
+  z-index: 1;
+  animation: fillBar 2.5s ease-in-out forwards;
+}
+
+@keyframes fillBar {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.spinner-border {
+  margin-top: 1.5rem;
+}

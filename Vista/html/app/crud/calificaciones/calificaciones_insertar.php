@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,60 +136,80 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light  py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
 
-            <div class="titulo_formulario">
-                <h2 align="center">Crear Calificación</h2><br>
-            </div>
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-journal-check me-2"></i> Crear Calificación
+                        </h2>
+                        <p class="text-muted mb-0 small">Registra una nueva calificación para el estudiante</p>
+                    </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_calificaciones" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_calificaciones"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            </div>
 
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>CALIFICACIÓN</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="insertar_calificaciones">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Codigo de la Calificación</label>
-                        <input type="text" class="input_formulario" name="codigo">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Fecha de la Calificacion</label>
-                        <input type="date" class="input_formulario" name="fecha">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Valor de la Calificacion</label>
-                        <input type="text" class="input_formulario" name="valor">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Codigo del Docente</label>
-                        <input type="text" class="input_formulario" name="docente">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Codigo de la Actividad</label>
-                        <input type="text" class="input_formulario" name="actividad">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Codigo del Estudiante</label>
-                        <input type="text" class="input_formulario" name="estudiante">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
 
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label">Código de la Calificación</label>
+                            <input type="text" class="form-control" name="codigo" id="codigo" placeholder="Ej: CAL101"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de la Calificación</label>
+                            <input type="date" class="form-control" name="fecha" id="fecha" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="valor" class="form-label">Valor de la Calificación</label>
+                            <input type="text" class="form-control" name="valor" id="valor" placeholder="Ej: 9.5"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="docente" class="form-label">Código del Docente</label>
+                            <input type="text" class="form-control" name="docente" id="docente" placeholder="Ej: DOC202"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="actividad" class="form-label">Código de la Actividad</label>
+                            <input type="text" class="form-control" name="actividad" id="actividad"
+                                placeholder="Ej: ACT303" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="estudiante" class="form-label">Código del Estudiante</label>
+                            <input type="text" class="form-control" name="estudiante" id="estudiante"
+                                placeholder="Ej: EST404" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </main>
+
 
     <script src="../vista/js/script_aplicacion.js"></script>
     <script src="../vista/js/script_modulos.js"></script>

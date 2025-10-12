@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-        <title><?php echo PROYECTO; ?></title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-        <link rel="icon" href="../vista/imagenes/logo2.png" type="image/ico" />
+    <title><?php echo PROYECTO; ?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" href="../vista/imagenes/logo2.png" type="image/ico" />
 
-        <link rel="stylesheet" href="../vista/css/normalize.css" />
-        <link rel="stylesheet" href="../vista/css/estilos_webcopy.css" />
-        <link rel="stylesheet" href="../vista/css/font-awesome.css">
+    <link rel="stylesheet" href="../vista/css/normalize.css" />
+    <link rel="stylesheet" href="../vista/css/estilos_webcopy.css" />
+    <link rel="stylesheet" href="../vista/css/font-awesome.css">
 
-        <script src="../vista/js/jquery-3.6.0.min.js"></script>
-        <script src="../vista/js/jquery.validate.js"></script>
-        <script src="../vista/js/jquery_slider.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
+    <script src="../vista/js/jquery-3.6.0.min.js"></script>
+    <script src="../vista/js/jquery.validate.js"></script>
+    <script src="../vista/js/jquery_slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <!--=================================header=================================-->
-        <header class="fixed-top">
+    <!--=================================header=================================-->
+    <header class="fixed-top">
 
         <div class="barra_nav border-bottom">
             <div class="container d-flex justify-content-start py-1 gap-3">
@@ -68,159 +68,168 @@
         </nav>
     </header>
 
-        <!--==================================main==================================-->
-        <main class="main_servicios">
+    <!--==================================main==================================-->
+    <main class="main_servicios">
 
         <a href="#" class="btn btn-primary back-to-top d-flex align-items-center justify-content-center">
             <i class="bi bi-arrow-up"></i>
         </a>
 
         <!--================= 1. Seccion Banner  =================-->
-            <section id="servicios" class="seccion_uno_intitucion">
-                <img src="../vista/imagenes/niños4.jpg" class="imagen_intitucion" />
-                <div class="contenido">
-                    <h1 class="titulo_banner">Servicios</h1>
-                    <p>Conoce nuestros servicios</p>
-                </div>
-            </section>
+        <section id="servicios" class="seccion_uno_intitucion">
+            <img src="../vista/imagenes/niños4.jpg" class="imagen_intitucion" />
+            <div class="contenido">
+                <h1 class="titulo_banner">Servicios</h1>
+                <p>Conoce nuestros servicios</p>
+            </div>
+        </section>
 
         <!--================= 2. Seccion uno Servicios  =================-->
-            <section class="blog-container seccion_servicios">
-                <h1 class="titulo">Nuestro Servicios</h1>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="servicio_card">
-                            <div class="servicio_imagen">
-                                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop&crop=top" 
-                                    alt="UI/UX Design workspace">
-                                <div class="servicio_tag">UI/UX Design</div>
-                                <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inscribirse">
-                                    <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                                </button>
-                            </div>
-                            <div class="servicio_contenido">
-                                <h3 class="servicio_titulo">Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
-                                <div class="card-meta">
-                                    <span class="author">Jenny Smith</span>
-                                    <span class="date">22 July 2023</span>
-                                </div>
-                            </div>
+        <section class="blog-container seccion_servicios">
+            <h1 class="titulo">Nuestro Servicios</h1>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicio_card">
+                        <div class="servicio_imagen">
+                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop&crop=top"
+                                alt="UI/UX Design workspace">
+                            <div class="servicio_tag">UI/UX Design</div>
+                            <button class="servicio_boton dark" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    title="Inscribirse" 
+                                    onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="servicio_card">
-                            <div class="servicio_imagen">
-                                <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop&crop=center" 
-                                    alt="User Experience Design">
-                                <div class="servicio_tag">User Experience</div>
-                                <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inscribirse">
-                                    <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                                </button>
-                            </div>
-                            <div class="servicio_contenido">
-                                <h3 class="servicio_titulo">Beyond Aesthetics: Crafting Intuitive UX</h3>
-                                <div class="card-meta">
-                                    <span class="author">Jenny Smith</span>
-                                    <span class="date">22 July 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="servicio_card">
-                            <div class="servicio_imagen">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" 
-                                    alt="Design workspace">
-                                <div class="servicio_tag">Design</div>
-                                <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inscribirse">
-                                    <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                                </button>
-                            </div>
-                            <div class="servicio_contenido">
-                                <h3 class="servicio_titulo">Pixels & Insights: Unveiling the Art of UI/UX</h3>
-                                <div class="card-meta">
-                                    <span class="author">Jenny Smith</span>
-                                    <span class="date">22 July 2023</span>
-                                </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
+                            <div class="card-meta">
+                                <span class="author">Jenny Smith</span>
+                                <span class="date">22 July 2023</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicio_card">
+                        <div class="servicio_imagen">
+                            <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop&crop=center"
+                                alt="User Experience Design">
+                            <div class="servicio_tag">User Experience</div>
+                            <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
+                        </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Beyond Aesthetics: Crafting Intuitive UX</h3>
+                            <div class="card-meta">
+                                <span class="author">Jenny Smith</span>
+                                <span class="date">22 July 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicio_card">
+                        <div class="servicio_imagen">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center"
+                                alt="Design workspace">
+                            <div class="servicio_tag">Design</div>
+                            <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
+                        </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Pixels & Insights: Unveiling the Art of UI/UX</h3>
+                            <div class="card-meta">
+                                <span class="author">Jenny Smith</span>
+                                <span class="date">22 July 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--================= 3. Seccion dos Servicios  =================-->
 
         <section class="blog-container seccion_servicios">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="servicio_card">
-                            <div class="servicio_imagen">
-                                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop&crop=top" 
-                                    alt="UI/UX Design workspace">
-                                <div class="servicio_tag">UI/UX Design</div>
-                                <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inscribirse">
-                                    <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                                </button>
-                            </div>
-                            <div class="servicio_contenido">
-                                <h3 class="servicio_titulo">Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
-                                <div class="card-meta">
-                                    <span class="author">Jenny Smith</span>
-                                    <span class="date">22 July 2023</span>
-                                </div>
-                            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicio_card">
+                        <div class="servicio_imagen">
+                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop&crop=top"
+                                alt="UI/UX Design workspace">
+                            <div class="servicio_tag">UI/UX Design</div>
+                            <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="servicio_card">
-                            <div class="servicio_imagen">
-                                <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop&crop=center" 
-                                    alt="User Experience Design">
-                                <div class="servicio_tag">User Experience</div>
-                                <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inscribirse">
-                                    <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                                </button>
-                            </div>
-                            <div class="servicio_contenido">
-                                <h3 class="servicio_titulo">Beyond Aesthetics: Crafting Intuitive UX</h3>
-                                <div class="card-meta">
-                                    <span class="author">Jenny Smith</span>
-                                    <span class="date">22 July 2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="servicio_card">
-                            <div class="servicio_imagen">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" 
-                                    alt="Design workspace">
-                                <div class="servicio_tag">Design</div>
-                                <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inscribirse">
-                                    <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                                </button>
-                            </div>
-                            <div class="servicio_contenido">
-                                <h3 class="servicio_titulo">Pixels & Insights: Unveiling the Art of UI/UX</h3>
-                                <div class="card-meta">
-                                    <span class="author">Jenny Smith</span>
-                                    <span class="date">22 July 2023</span>
-                                </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
+                            <div class="card-meta">
+                                <span class="author">Jenny Smith</span>
+                                <span class="date">22 July 2023</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-        </main>
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicio_card">
+                        <div class="servicio_imagen">
+                            <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop&crop=center"
+                                alt="User Experience Design">
+                            <div class="servicio_tag">User Experience</div>
+                            <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
+                        </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Beyond Aesthetics: Crafting Intuitive UX</h3>
+                            <div class="card-meta">
+                                <span class="author">Jenny Smith</span>
+                                <span class="date">22 July 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!--=================================footer=================================-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicio_card">
+                        <div class="servicio_imagen">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center"
+                                alt="Design workspace">
+                            <div class="servicio_tag">Design</div>
+                            <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
+                        </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Pixels & Insights: Unveiling the Art of UI/UX</h3>
+                            <div class="card-meta">
+                                <span class="author">Jenny Smith</span>
+                                <span class="date">22 July 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer class="footer" id="contact">
+    </main>
+
+    <!--=================================footer=================================-->
+
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 d-flex flex-column gap-3 footer_informacion">
@@ -281,8 +290,8 @@
         </div>
     </footer>
 
-        <script src="../vista/js/jquery_slider.js"></script>        
+    <script src="../vista/js/jquery_slider.js"></script>
 
-    </body>
+</body>
 
 </html>

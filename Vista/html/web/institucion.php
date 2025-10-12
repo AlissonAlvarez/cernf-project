@@ -193,7 +193,7 @@
             <div class="container">
                 <div class="team-grid">
                     <div class="persona_card highlighted">
-                        <img src="../vista/imagenes/mujer-profesora.jpg" alt="" class="persona_foto">
+                        <img src="../vista/imagenes/directora-ines.png" class="persona_foto">
                         <h4 class="persona_nombre">Inés Galindo Herrera</h4>
                         <p class="persona_cargo">Directora</p>
                         <div class="persona_social">
@@ -203,8 +203,7 @@
                     </div>
 
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop&crop=face"
-                            alt="Andrea Soto" class="persona_foto">
+                        <img src="../vista/imagenes/profesora-andrea.png"class="persona_foto">
                         <h4 class="persona_nombre">Andrea Soto</h4>
                         <p class="persona_cargo">Profesora</p>
                         <div class="persona_social">
@@ -214,8 +213,7 @@
                     </div>
 
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face"
-                            alt="Brandon Camacho" class="persona_foto">
+                        <img src="../vista/imagenes/profesor-brandon.png" class="persona_foto">
                         <h4 class="persona_nombre">Brandon Camacho</h4>
                         <p class="persona_cargo">Profesor</p>
                         <div class="persona_social">
@@ -226,8 +224,7 @@
                     </div>
 
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face"
-                            alt="Felisa Mayorga" class="persona_foto">
+                        <img src="../vista/imagenes/profesora-felisa.png" class="persona_foto">
                         <h4 class="persona_nombre">Felisa Mayorga</h4>
                         <p class="persona_cargo">Profesora</p>
                         <div class="persona_social">
@@ -239,8 +236,7 @@
 
                 <div class="team-grid">
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=400&fit=crop&crop=face"
-                            alt="Hermisson Arias" class="persona_foto">
+                        <img src="../vista/imagenes/profesor-hermisson.png" class="persona_foto">
                         <h4 class="persona_nombre">Hermisson Arias</h4>
                         <p class="persona_cargo">Profesor</p>
                         <div class="persona_social">
@@ -252,8 +248,7 @@
                     </div>
 
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face"
-                            alt="Hilda Buendia" class="persona_foto">
+                        <img src="../vista/imagenes/profesora-hilda.png" class="persona_foto">
                         <h4 class="persona_nombre">Hilda Buendia</h4>
                         <p class="persona_cargo">Profesora</p>
                         <div class="persona_social">
@@ -264,8 +259,7 @@
                     </div>
 
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=400&fit=crop&crop=face"
-                            alt="Iveth Mary Valencia" class="persona_foto">
+                        <img src="../vista/imagenes/profesora-iveth.png" class="persona_foto">
                         <h4 class="persona_nombre">Iveth Mary Valencia</h4>
                         <p class="persona_cargo">Profesora</p>
                         <div class="persona_social">
@@ -275,8 +269,7 @@
                         </div>
                     </div>
                     <div class="persona_card">
-                        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=400&fit=crop&crop=face"
-                            alt="Nancy Yolanda Pabón" class="persona_foto">
+                        <img src="../vista/imagenes/profesora-nancy.png" class="persona_foto">
                         <h4 class="persona_nombre">Nancy Yolanda Pabón</h4>
                         <p class="persona_cargo">Profesor</p>
                         <div class="persona_social">
@@ -288,8 +281,6 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
     <script src="../vista/js/jquery_slider.js"></script>

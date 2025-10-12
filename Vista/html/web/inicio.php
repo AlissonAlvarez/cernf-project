@@ -201,72 +201,71 @@
         <!--================= 4 Seccion Accesos =================-->
         <section class="py-5 bg-light">
             <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="titulo">Enlaces de Interés</h2>
+    <div class="text-center mb-5">
+        <h2 class="titulo">Enlaces de Interés</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="seccion_acceso text-center">
+                <div class="service-icon mx-auto mb-3">
+                    <i class="bi bi-chat-dots fs-1 text-white"></i>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="seccion_acceso">
-                            <div class="service-icon mx-auto mb-3">
-                                <i class="fas fa-comments"></i>
-                            </div>
-                            <h4>Business & Finance</h4>
-                            <p>Comprehensive business and financial consulting to optimize your operations and
-                                profitability.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="seccion_acceso_uno text-center">
-                            <div class="service-icon mx-auto">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <h4>Consumer Goods</h4>
-                            <p>Specialized consulting for consumer goods companies to enhance market position and
-                                customer satisfaction.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="seccion_acceso_uno text-center">
-                            <div class="service-icon mx-auto">
-                                <i class="fas fa-industry"></i>
-                            </div>
-                            <h4>Audit & Evaluation</h4>
-                            <p>Thorough business audits and evaluations to identify opportunities for improvement and
-                                growth.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="seccion_acceso_uno text-center">
-                            <div class="service-icon mx-auto">
-                                <i class="fas fa-search-dollar"></i>
-                            </div>
-                            <h4>Business Consulting</h4>
-                            <p>End-to-end business consulting services tailored to your specific industry and market
-                                challenges.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="seccion_acceso_uno text-center">
-                            <div class="service-icon mx-auto">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <h4>Market Analysis</h4>
-                            <p>Comprehensive market research and analysis to inform strategic decision-making and
-                                planning.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="seccion_acceso_uno text-center">
-                            <div class="service-icon mx-auto">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h4>Investment Management</h4>
-                            <p>Professional investment management and advisory services to maximize your returns and
-                                minimize risks.</p>
-                        </div>
-                    </div>
-                </div>
+                <h4>Business & Finance</h4>
+                <p>Comprehensive business and financial consulting to optimize your operations and profitability.</p>
             </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="seccion_acceso_uno text-center">
+                <div class="service-icon mx-auto mb-3">
+                    <i class="bi bi-bar-chart fs-1 text-success"></i>
+                </div>
+                <h4>Consumer Goods</h4>
+                <p>Specialized consulting for consumer goods companies to enhance market position and customer satisfaction.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="seccion_acceso_uno text-center">
+                <div class="service-icon mx-auto mb-3">
+                    <i class="bi bi-building-gear fs-1 text-success"></i>
+                </div>
+                <h4>Audit & Evaluation</h4>
+                <p>Thorough business audits and evaluations to identify opportunities for improvement and growth.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="seccion_acceso_uno text-center">
+                <div class="service-icon mx-auto mb-3">
+                    <i class="bi bi-graph-up-arrow fs-1 text-success"></i>
+                </div>
+                <h4>Business Consulting</h4>
+                <p>End-to-end business consulting services tailored to your specific industry and market challenges.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="seccion_acceso_uno text-center">
+                <div class="service-icon mx-auto mb-3">
+                    <i class="bi bi-bar-chart-line fs-1 text-success"></i>
+                </div>
+                <h4>Market Analysis</h4>
+                <p>Comprehensive market research and analysis to inform strategic decision-making and planning.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="seccion_acceso_uno text-center">
+                <div class="service-icon mx-auto mb-3">
+                    <i class="bi bi-people fs-1 text-success"></i>
+                </div>
+                <h4>Investment Management</h4>
+                <p>Professional investment management and advisory services to maximize your returns and minimize risks.</p>
+            </div>
+        </div>
+    </div>
+</div>
         </section>
 
         <!--================= 5. Seccion Anuncio =================-->

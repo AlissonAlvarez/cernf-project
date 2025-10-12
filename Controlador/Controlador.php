@@ -35,6 +35,10 @@ if (isset($_GET["accion"]) && $_GET["accion"] == "cuenta") {
     $controlador->verPagina('../Vista/html/web/cuenta.php');
 }
 
+if (isset($_GET["accion"]) && $_GET["accion"] == "inscripcion") {
+    $controlador = new Controlador();
+    $controlador->verPagina('../Vista/html/web/inscripcion.php');
+}
 
 //VISUALIZAR VISTAS (APP)
 if (isset($_GET["accion"]) && $_GET["accion"] == "aplicacion") {
@@ -156,6 +160,10 @@ if (isset($_GET["accion"]) && $_GET["accion"] == "modulo_usuarios") {
     $controlador->obtener_usuarios_c();
 }
 
+if (isset($_GET["accion"]) && $_GET["accion"] == "perfil_usuario") {
+    $controlador = new FuncionesControlador();
+    $controlador->obtener_perfil_usuario_c();
+}
 
 //VISUALIZAR PLANTILLA (PDF)
 if (isset($_GET["accion"]) && $_GET["accion"] == "actividades_pdf") {

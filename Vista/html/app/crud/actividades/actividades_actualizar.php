@@ -3,32 +3,32 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-        <title>Centro Educativo Rural Nicolás de Federmán</title>
-        <link rel="icon" href="../vista/imagenes/logo_icono.ico" type="image/ico" />
-        <link rel="icon" href="../vista/imagenes/logo_icono.ico" type="image/ico" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Centro Educativo Rural Nicolás de Federmán</title>
+    <link rel="icon" href="../vista/imagenes/logo_icono.ico" type="image/ico" />
+    <link rel="icon" href="../vista/imagenes/logo_icono.ico" type="image/ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-        <link rel="stylesheet" type="text/css" href="../vista/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../vista/css/estilos_crud.css">
-        <link rel="stylesheet" type="text/css" href="../vista/fuentes/Font-Awesome (675)/estilos_fuente_icono.css">
+    <link rel="stylesheet" type="text/css" href="../vista/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../vista/css/estilos_crud.css">
+    <link rel="stylesheet" type="text/css" href="../vista/fuentes/Font-Awesome (675)/estilos_fuente_icono.css">
 
-        <script src="../vista/js/jquery-3.6.0.min.js"></script>
-        <script src="../vista/js/jquery.validate.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vista/js/jquery-3.6.0.min.js"></script>
+    <script src="../vista/js/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!--=================================header=================================-->
-        <header id="header" class="bg-primary text-white p-3 header">
+    <!--=================================header=================================-->
+    <header id="header" class="bg-primary text-white p-3 header">
         <div id="contenedor_aplicacion" class="container-fluid d-flex justify-content-between align-items-center">
             <div id="logo">
                 <a href="Controlador.php?accion=inicio" class="text-black text-decoration-none fw-semibold fs-4">
@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -134,61 +134,76 @@
         </div>
     </div>
 
-        <!--==================================main==================================-->
-        <main class="main_crud">
+    <!--==================================main==================================-->
+    <main class="main_crud bg-light py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-            <div class="contenedor_formulario" id="contenedor_crud">
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-pencil-square me-2"></i> Actualizar Actividad
+                        </h2>
+                        <p class="text-muted mb-0 small">Modifica los datos de una actividad existente</p>
+                    </div>
 
-                <div class="titulo_formulario">
-                    <h2 align="center">Actualizar Actividad</h2><br>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_actividades"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
                 </div>
 
-                <div class="botones_tabla">
-                    <form action="" method="">
-                        <a href="Controlador.php?accion=modulo_actividades" title="Regresar"class="btn_tabla_f"><span class="icon-folder-open-o"></span></a>
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
+                        <input type="hidden" name="accion" value="actualizar_actividades">
+
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de Actividad</label>
+                            <input type="text" class="form-control" id="fecha" name="fecha"
+                                value="<?php echo $datos->obtenerFechaActividad(); ?>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="bimestre" class="form-label">Número de Bimestre</label>
+                            <input type="text" class="form-control" id="bimestre" name="bimestre"
+                                value="<?php echo $datos->obtenerBimestreActividad(); ?>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asignatura" class="form-label">Código de Asignatura</label>
+                            <input type="text" class="form-control" id="asignatura" name="asignatura"
+                                value="<?php echo $datos->obtenerCodigoAsignatura(); ?>" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="tipoactividad" class="form-label">Código del Tipo de Actividad</label>
+                            <input type="text" class="form-control" id="tipoactividad" name="tipoactividad"
+                                value="<?php echo $datos->obtenerCodigoTipoActividad(); ?>" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar Cambios
+                            </button>
+                        </div>
                     </form>
-
                 </div>
 
-                <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                    <fieldset>
-                        <legend>ACTIVIDAD</legend>                        
-                        <div class="label_formulario">
-                            <input type="hidden"name="accion" value="actualizar_actividades"><br>
-                        </div>
-                        <div class="label_formulario">
-                            <label>Fecha de Actividad</label>
-                            <input type="text" class="input_formulario" name="fecha" value="<?php echo $datos->obtenerFechaActividad(); ?>">
-                        </div>
-                        <div class="label_formulario">
-                            <label>Número de Bimestre</label>
-                            <input type="text" class="input_formulario" name="bimestre" value="<?php echo $datos->obtenerBimestreActividad(); ?>">
-                        </div>
-                        <div class="label_formulario">
-                            <label>Código de Asignatura</label>
-                            <input type="text" class="input_formulario" name="asignatura" value="<?php echo $datos->obtenerCodigoAsignatura(); ?>">
-                        </div>
-                        <div class="label_formulario">
-                            <label>Código del Tipo de Actividades</label>
-                            <input type="text" class="input_formulario" name="tipoactividad"value="<?php echo $datos->obtenerCodigoTipoActividad(); ?>">
-                        </div>                         
-                        <div class="label_formulario">
-                            <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">                        
-                        </div>
-                    </fieldset>
-                </form>
             </div>
+        </div>
+    </main>
 
-        </main>
+    <script src="../vista/js/script_aplicacion.js"></script>
+    <script src="../vista/js/script_modulos.js"></script>
+    <!--=================================footer=================================-->
 
-        <script src="../vista/js/script_aplicacion.js"></script>
-        <script src="../vista/js/script_modulos.js"></script>
-        <!--=================================footer=================================-->
+    <footer>
 
-        <footer>
+    </footer>
 
-        </footer>
-
-    </body>
+</body>
 
 </html>

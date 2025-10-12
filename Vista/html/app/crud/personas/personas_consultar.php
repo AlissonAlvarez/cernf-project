@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,74 +136,92 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-search me-2"></i> Consultar Persona
+                        </h2>
+                        <p class="text-muted mb-0 small">Visualiza la información de una persona registrada</p>
+                    </div>
 
-            <div class="titulo_formulario">
-                <h2 align="center">Consultar Persona</h2><br>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_personas"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
+                        <fieldset class="border rounded-3 p-4">
+                            <legend class="float-none w-auto px-3 fw-semibold color_icon">Persona</legend>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Número de Identificación</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerIdentificacionPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Nombres</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerNombrePersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Apellidos</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerApellidoPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Rol</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerRolPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Género</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerGeneroPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Fecha de Nacimiento</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerFechaNacimientoPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Dirección</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerDireccionPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Teléfono</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerTelefonoPersona(); ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Correo</label>
+                                <input type="text" class="form-control" readonly
+                                    value="<?php echo $datos->obtenerCorreoPersona(); ?>">
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
             </div>
-
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_personas" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
-
-            </div>
-
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>PERSONA</legend>
-                    <div class="label_formulario">
-                        <label>Número de Identificación</label>
-                        <input type="button" class="input_formulario" name="identificacion"
-                            value="<?php echo $datos->obtenerIdentificacionPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Nombres</label>
-                        <input type="button" class="input_formulario" name="nombre"
-                            value="<?php echo $datos->obtenerNombrePersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Apellidos</label>
-                        <input type="button" class="input_formulario" name="apellido"
-                            value="<?php echo $datos->obtenerApellidoPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Rol</label>
-                        <input type="button" class="input_formulario" name="rol"
-                            value="<?php echo $datos->obtenerRolPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Género</label>
-                        <input type="button" class="input_formulario" name="genero"
-                            value="<?php echo $datos->obtenerGeneroPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Fecha de Nacimiento</label>
-                        <input type="button" class="input_formulario" name="nacimiento"
-                            value="<?php echo $datos->obtenerFechaNacimientoPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Dirección</label>
-                        <input type="button" class="input_formulario" name="direccion"
-                            value="<?php echo $datos->obtenerDireccionPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Télefono</label>
-                        <input type="button" class="input_formulario" name="telefono"
-                            value="<?php echo $datos->obtenerTelefonoPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Correo</label>
-                        <input type="button" class="input_formulario" name="correo"
-                            value="<?php echo $datos->obtenerCorreoPersona(); ?>">
-                    </div>
-                </fieldset>
-            </form>
         </div>
-
     </main>
 
     <script src="../vista/js/script_aplicacion.js"></script>

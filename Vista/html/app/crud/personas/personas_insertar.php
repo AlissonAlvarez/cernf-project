@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,80 +136,111 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light  py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
 
-            <div class="titulo_formulario">
-                <h2 align="center">Crear Persona</h2><br>
-            </div>
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-person-plus me-2"></i> Crear Persona
+                        </h2>
+                        <p class="text-muted mb-0 small">Registra los datos de una persona en el sistema</p>
+                    </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_personas" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_personas"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            </div>
 
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>PERSONA</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="insertar_personas">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="identificacion">Número de Identificación</label>
-                        <input type="text" class="input_formulario" id="identificacion" name="identificacion">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="nombre">Nombres</label>
-                        <input type="text" class="input_formulario" id="nombre" name="nombre">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="apellido">Apellidos</label>
-                        <input type="text" class="input_formulario" id="apellido" name="apellido">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="rol">Rol</label>
-                        <div class="select_formulario">
-                            <select id="rol" name="rol">
+
+                        <div class="mb-3">
+                            <label for="identificacion" class="form-label">Número de Identificación</label>
+                            <input type="text" class="form-control" id="identificacion" name="identificacion"
+                                placeholder="Ej: 123456789" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido"
+                                placeholder="Ej: Pérez" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="rol" class="form-label">Rol</label>
+                            <select id="rol" name="rol" class="form-select" required>
                                 <option value="">Seleccionar</option>
-                                <option value="Docente">Acudiente</option>
+                                <option value="Acudiente">Acudiente</option>
                                 <option value="Docente">Docente</option>
                                 <option value="Estudiante">Estudiante</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="label_formulario">
-                        <label for="genero">Género</label>
-                        <input type="radio" id="genero" name="genero" value="Hombre" /> Hombre
-                        <input type="radio" id="genero" name="genero" value="Mujer" /> Mujer
-                    </div>
-                    <div class="label_formulario">
-                        <label for="fechanacimiento">Fecha de Nacimiento</label>
-                        <input type="date" class="input_formulario" id="fechanacimiento" name="fechanacimiento">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="direccion">Dirección</label>
-                        <input type="text" class="input_formulario" id="direccion" name="direccion">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" class="input_formulario" id="telefono" name="telefono">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="correo">Correo</label>
-                        <input type="email" class="input_formulario" id="correo" name="correo">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
 
+                        <div class="mb-3">
+                            <label class="form-label d-block">Género</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genero" id="generoH" value="Hombre"
+                                    required>
+                                <label class="form-check-label" for="generoH">Hombre</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genero" id="generoM" value="Mujer">
+                                <label class="form-check-label" for="generoM">Mujer</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fechanacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="fechanacimiento" name="fechanacimiento"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion"
+                                placeholder="Ej: Calle 123" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono"
+                                placeholder="Ej: 3001234567" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" name="correo"
+                                placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </main>
+
 
     <script src="../vista/js/script_aplicacion.js"></script>
     <script src="../vista/js/script_modulos.js"></script>
