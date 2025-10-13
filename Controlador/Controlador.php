@@ -35,6 +35,10 @@ if (isset($_GET["accion"]) && $_GET["accion"] == "cuenta") {
     $controlador->verPagina('../Vista/html/web/cuenta.php');
 }
 
+if (isset($_GET["accion"]) && $_GET["accion"] == "inscripcion") {
+    $controlador = new Controlador();
+    $controlador->verPagina('../Vista/html/web/inscripcion.php');
+}
 
 //VISUALIZAR VISTAS (APP)
 if (isset($_GET["accion"]) && $_GET["accion"] == "aplicacion") {
@@ -156,6 +160,10 @@ if (isset($_GET["accion"]) && $_GET["accion"] == "modulo_usuarios") {
     $controlador->obtener_usuarios_c();
 }
 
+if (isset($_GET["accion"]) && $_GET["accion"] == "perfil_usuario") {
+    $controlador = new FuncionesControlador();
+    $controlador->obtener_perfil_usuario_c();
+}
 
 //VISUALIZAR PLANTILLA (PDF)
 if (isset($_GET["accion"]) && $_GET["accion"] == "actividades_pdf") {
@@ -785,210 +793,348 @@ if (isset($_GET["accion"]) && $_GET["accion"] == "usuarios_actualizar") {
 //VISUALIZAR VISTAS CRUD (ELIMINAR)
 if (isset($_GET["accion"]) && $_GET["accion"] == "actividades_eliminar") {
     if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->actividades_eliminar_id_c($id);
+        include '../Vista/html/app/crud/actividades/actividades_eliminar.php';
     } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "acudientes_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->acudientes_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "acudientexestudiante_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->acudientexestudiante_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "acuerdos_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->acuerdos_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "asignaturas_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->asignaturas_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "calificaciones_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->calificaciones_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "centroseducativos_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->centroseducativos_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "controlasistencias_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->controlasistencias_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "cursos_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->cursos_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "directora_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->directora_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "docentes_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->docentes_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "docentexsede_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->docentexsede_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}if (isset($_GET["accion"]) && $_GET["accion"] == "estudiantes_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->estudiantes_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "grados_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->grados_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "matriculas_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->matriculas_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "observador_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->observador_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "personas_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->personas_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}if (isset($_GET["accion"]) && $_GET["accion"] == "salones_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->salones_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "sedes_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->sedes_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "sueldos_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->sueldos_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "tipoactividades_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->tipoactividades_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "tipofaltas_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->tipofaltas_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
-    }
-}
-if (isset($_GET["accion"]) && $_GET["accion"] == "usuarios_eliminar") {
-    if (isset($_GET['id']) && $_GET['id'] != '') {
-        $id = $_GET['id'];
-        $controlador = new FuncionesControlador();
-        $controlador->usuarios_eliminar_id_c($id);
-    } else {
-        echo 'ERROR AL ELIMINAR';
+        echo 'ERROR: ID no válido';
     }
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_actividades' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->eliminar_actividades_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "acudientes_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/acudientes/acudientes_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_acudientes' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->acudientes_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "acudientexestudiante_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/acudientexestudiante/acudientexestudiante_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_acudientexestudiante' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->acudientexestudiante_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "acuerdos_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/acuerdos/acuerdos_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_acuerdos' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->acuerdos_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "asignaturas_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/asignaturas/asignaturas_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_asignaturas' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->asignaturas_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "calificaciones_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/calificaciones/calificaciones_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_calificaciones' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->calificaciones_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "centroseducativos_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/centroseducativos/centroseducativos_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_centroseducativos' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->centroseducativos_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "controlasistencias_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/controlasistencias/controlasistencias_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_controlasistencias' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->controlasistencias_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "cursos_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/cursos/cursos_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_cursos' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->cursos_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "directora_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/directora/directora_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_directora' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->directora_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "docentes_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/docentes/docentes_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_docentes' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->docentes_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "docentexsede_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/docentexsede/docentexsede_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_docentexsede' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->docentexsede_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "estudiantes_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/estudiantes/estudiantes_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_estudiantes' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->estudiantes_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "grados_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/grados/grados_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_grados' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->grados_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "matriculas_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/matriculas/matriculas_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_matriculas' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->matriculas_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "observador_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/observador/observador_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_observador' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->observador_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "personas_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/personas/personas_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_personas' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->personas_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "salones_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/salones/salones_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_salones' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->salones_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "sedes_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/sedes/sedes_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_sedes' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->sedes_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "sueldos_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/sueldos/sueldos_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_sueldos' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->sueldos_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "tipoactividades_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/tipoactividades/tipoactividades_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_tipoactividades' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->tipoactividades_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "tipofaltas_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/tipofaltas/tipofaltas_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_tipofaltas' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->tipofaltas_eliminar_id_c($_POST['id']);
+    }
+}
+
+if (isset($_GET["accion"]) && $_GET["accion"] == "usuarios_eliminar") {
+    if (isset($_GET['id']) && $_GET['id'] != '') {
+        include '../Vista/html/app/crud/usuarios/usuarios_eliminar.php';
+    } else {
+        echo 'ERROR: ID no válido';
+    }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['accion']) && $_POST['accion'] === 'eliminar_usuarios' && isset($_POST['id'])) {
+        $controlador = new FuncionesControlador();
+        $controlador->usuarios_eliminar_id_c($_POST['id']);
+    }
+}
 
 //FUNCIONES CRUD (INSERTAR)
 if (isset($_POST["accion"]) && $_POST["accion"] == "insertar_actividades") {

@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,26 +136,36 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
+                <div class="card-header py-4 px-4 text-center">
+                    <h2 class="fw-bold text-danger mb-1">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i> ¿Está seguro de eliminar este registro?
+                    </h2>
+                    <p class="text-muted mb-0 small">Esta acción no se puede deshacer</p>
+                </div>
 
-            <div class="titulo_formulario">
-                <h2 align="center">¿Está¡ seguro de eliminar el siguiente registro?</h2><br>
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST"
+                        class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <input type="hidden" name="accion" value="eliminar_observador">
+                        <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+
+                        <button type="button" class="btn btn-outline-secondary rounded-pill px-4"
+                            onclick="window.history.back()">
+                            Cancelar
+                        </button>
+
+                        <button type="submit" class="btn btn-danger rounded-pill px-4">
+                            Aceptar
+                        </button>
+                    </form>
+                </div>
 
             </div>
-
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-
-                <input type="hidden" name="accion" value="eliminar_personas">
-                <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
-                <a href="Controlador.php?accion=modulo_personas" class="btn_cancel">Cancelar</a>
-                <input type="submit" value="Aceptar" class="btn_ok">
-
-
-            </form>
         </div>
-
     </main>
 
     <script src="../vista/js/script_aplicacion.js"></script>

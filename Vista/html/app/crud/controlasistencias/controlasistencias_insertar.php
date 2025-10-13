@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,40 +136,47 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light  py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
 
-            <div class="titulo_formulario">
-                <h2 align="center">Crear Control Asistencia</h2><br>
-            </div>
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-clipboard-check me-2"></i> Crear Control Asistencia
+                        </h2>
+                        <p class="text-muted mb-0 small">Registra el control de asistencia de un estudiante</p>
+                    </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_controlasistencias" title="Regresar"
-                        class="btn_tabla_f"><span class="icon-folder-open-o"></span></a>
-                </form>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_controlasistencias"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            </div>
 
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>CONTROL ASISTENCIA</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="insertar_controlasistencias">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Código de Control de Asistencia</label>
-                        <input type="search" class="input_formulario" name="codigo">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Fecha & Hora de Asistencia</label>
-                        <input type="datetime-local" class="input_formulario" name="fecha">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Estado</label>
-                        <div class="select_formulario">
-                            <select name="estado">
+
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label">Código de Control de Asistencia</label>
+                            <input type="search" class="form-control" name="codigo" id="codigo" placeholder="Ej: CA101"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha & Hora de Asistencia</label>
+                            <input type="datetime-local" class="form-control" name="fecha" id="fecha" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="estado" class="form-label">Estado</label>
+                            <select name="estado" id="estado" class="form-select" required>
                                 <option value="">Seleccionar</option>
                                 <option value="Llegada Tarde">Llegada Tarde</option>
                                 <option value="Falla">Falla</option>
@@ -177,11 +184,10 @@
                                 <option value="Retirado">Retirado</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="label_formulario">
-                        <label>Número de Bimestre</label>
-                        <div class="select_formulario">
-                            <select name="bimestre">
+
+                        <div class="mb-3">
+                            <label for="bimestre" class="form-label">Número de Bimestre</label>
+                            <select name="bimestre" id="bimestre" class="form-select" required>
                                 <option value="">Seleccionar</option>
                                 <option value="1">Bimestre 1</option>
                                 <option value="2">Bimestre 2</option>
@@ -189,28 +195,37 @@
                                 <option value="4">Bimestre 4</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="label_formulario">
-                        <label>Observación</label>
-                        <textarea class="textarea_formulario" name="observacion"></textarea>
-                    </div>
 
-                    <div class="label_formulario">
-                        <label>Código de Estudiante</label>
-                        <input type="search" class="input_formulario" name="estudiante">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Código de Docente</label>
-                        <input type="search" class="input_formulario" name="docente">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
+                        <div class="mb-3">
+                            <label for="observacion" class="form-label">Observación</label>
+                            <textarea class="form-control" name="observacion" id="observacion" rows="4"
+                                placeholder="Escribe alguna observación..."></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="estudiante" class="form-label">Código de Estudiante</label>
+                            <input type="search" class="form-control" name="estudiante" id="estudiante"
+                                placeholder="Ej: EST123" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="docente" class="form-label">Código de Docente</label>
+                            <input type="search" class="form-control" name="docente" id="docente"
+                                placeholder="Ej: DOC456" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </div>
-
     </main>
+
 
     <script src="../vista/js/script_aplicacion.js"></script>
     <script src="../vista/js/script_modulos.js"></script>

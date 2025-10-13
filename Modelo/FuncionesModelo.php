@@ -1514,7 +1514,7 @@ class FuncionesModelo extends Conexion {
     public function eliminar_acuerdos_id_m($id) {
         $conexion = new Conexion();
         $conexion->abrir_conexion();
-        $sql = "DELETE FROM acuerdos WHERE codacuerdo='" . $id . "'";
+        $sql = "DELETE FROM acuerdos WHERE codacuerdos='" . $id . "'";
         $conexion->consultar_informacion($sql);
         $resultado = $conexion->obtener_resultados();
         $conexion->cerrar_conexion();
@@ -1554,7 +1554,7 @@ class FuncionesModelo extends Conexion {
     public function eliminar_controlasistencias_id_m($id) {
         $conexion = new Conexion();
         $conexion->abrir_conexion();
-        $sql = "DELETE FROM controlasistencias WHERE codcentroeducativo='" . $id . "'";
+        $sql = "DELETE FROM controlasistencias WHERE codcontrolasistencia='" . $id . "'";
         $conexion->consultar_informacion($sql);
         $resultado = $conexion->obtener_resultados();
         $conexion->cerrar_conexion();
@@ -1584,7 +1584,7 @@ class FuncionesModelo extends Conexion {
     public function eliminar_docentes_id_m($id) {
         $conexion = new Conexion();
         $conexion->abrir_conexion();
-        $sql = "DELETE FROM docentes WHERE idpersona='" . $id . "'";
+        $sql = "DELETE FROM docentes WHERE coddocente='" . $id . "'";
         $conexion->consultar_informacion($sql);
         $resultado = $conexion->obtener_resultados();
         $conexion->cerrar_conexion();
@@ -1624,7 +1624,7 @@ class FuncionesModelo extends Conexion {
     public function eliminar_matriculas_id_m($id) {
         $conexion = new Conexion();
         $conexion->abrir_conexion();
-        $sql = "DELETE FROM matriculas WHERE codgrado='" . $id . "'";
+        $sql = "DELETE FROM matriculas WHERE codmatricula='" . $id . "'";
         $conexion->consultar_informacion($sql);
         $resultado = $conexion->obtener_resultados();
         $conexion->cerrar_conexion();

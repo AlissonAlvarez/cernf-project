@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,49 +136,58 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-person-fill-gear me-2"></i> Actualizar Usuario
+                        </h2>
+                        <p class="text-muted mb-0 small">Modifica la información del usuario registrado</p>
+                    </div>
 
-            <div class="titulo_formulario">
-                <h2 align="center">Actualizar Usuario</h2><br>
-            </div>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_usuarios"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_usuarios" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
-
-            </div>
-
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>USUARIO</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="actualizar_usuarios">
-                    </div>
-                    <div class="label_formulario" <label for="nombre">Nombre de Usuario</label>
-                        <input type="text" class="input_formulario" id="nombre" name="nombre"
-                            value="<?php echo $datos->obtenerNombreUsuario(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="apellido">Contraseña de Usuario</label>
-                        <input type="text" class="input_formulario" id="contrasena" name="contrasena"
-                            value="<?php echo $datos->obtenerContrasenaUsuario(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="fechanacimiento">Identificaciòn de Usuario</label>
-                        <input type="text" class="input_formulario" id="identificacion" name="identificacion"
-                            value="<?php echo $datos->obtenerIdentificacionPersona(); ?>">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
 
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                value="<?php echo $datos->obtenerNombreUsuario(); ?>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña de Usuario</label>
+                            <input type="text" class="form-control" id="contrasena" name="contrasena"
+                                value="<?php echo $datos->obtenerContrasenaUsuario(); ?>" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="identificacion" class="form-label">Identificación de Usuario</label>
+                            <input type="text" class="form-control" id="identificacion" name="identificacion"
+                                value="<?php echo $datos->obtenerIdentificacionPersona(); ?>" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar Cambios
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="../vista/js/script_aplicacion.js"></script>

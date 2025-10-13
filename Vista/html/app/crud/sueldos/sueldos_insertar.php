@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,44 +136,58 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light  py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
 
-            <div class="titulo_formulario">
-                <h2 align="center">Crear Sueldo</h2><br>
-            </div>
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-currency-dollar me-2"></i> Crear Sueldo
+                        </h2>
+                        <p class="text-muted mb-0 small">Registra un nuevo sueldo para el personal</p>
+                    </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_sueldos" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_sueldos"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            </div>
 
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>SUELDO</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="insertar_sueldos">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="categoria">Categoría de Sueldo</label>
-                        <input type="text" class="input_formulario" id="categoria" name="categoria">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="valor">Valor de Sueldo</label>
-                        <input type="text" class="input_formulario" id="valor" name="valor">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
 
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Categoría de Sueldo</label>
+                            <input type="text" class="form-control" id="categoria" name="categoria"
+                                placeholder="Ej: Docente" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="valor" class="form-label">Valor de Sueldo</label>
+                            <input type="text" class="form-control" id="valor" name="valor" placeholder="Ej: 1500000"
+                                required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </main>
+
 
     <script src="../vista/js/script_aplicacion.js"></script>
     <script src="../vista/js/script_modulos.js"></script>

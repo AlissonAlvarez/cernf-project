@@ -28,6 +28,10 @@ require_once '../Vista/librerias/fpdf/fpdf.php';
 
 class FuncionesControlador extends FuncionesModelo {
 
+    public function obtener_perfil_usuario_c() {
+        require_once '../Vista/html/app/perfil_usuario.php';
+    }
+
     public function obtener_vista_cuenta() {
         require_once '../Vista/html/web/cuenta.php';
     }
@@ -37,18 +41,29 @@ class FuncionesControlador extends FuncionesModelo {
     }
 
     //FUNCIONES DE INICIAR & CERRAR SESIÓN
-    public function iniciar_sesion($Usunombre, $Usucontrasena) {
+        public function iniciar_sesion($Usunombre, $Usucontrasena) {
         $this->usunombre = $Usunombre;
         $this->usucontrasena = $Usucontrasena;
         $usuario = $this->consultar_usuario();
+
         if ($usuario == "sindatos") {
             echo '<script>
-            alert ("Usuario no existe, por favor verifique los datos introducidos");
-            window.location = "Controlador.php?accion=cuenta";
-        </script>';
+                alert("Usuario no existe, por favor verifique los datos introducidos");
+                window.location = "Controlador.php?accion=cuenta";
+            </script>';
         } else {
+            // ✅ Iniciar la sesión y guardar los datos del usuario
+            session_start();
+            $_SESSION['usuario'] = $this->usunombre;
+            $_SESSION['logueado'] = true;
+
+            // ✅ Ir a la vista principal de la aplicación
             $this->obtener_vista_aplicacion();
         }
+    }
+
+    public function obtener_inscripcion_c() {
+        require_once '../Vista/html/web/inscripcion.php';
     }
 
     public function cerrar_sesion() {

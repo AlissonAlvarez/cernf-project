@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,47 +136,61 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light  py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
 
-            <div class="titulo_formulario">
-                <h2 align="center">Crear Docente X Sede</h2><br>
-            </div>
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-people-fill me-2"></i> Crear Docente X Sede
+                        </h2>
+                        <p class="text-muted mb-0 small">Registra la asignación de docentes a sedes</p>
+                    </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_docentexsede" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_docentexsede"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            </div>
 
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>DOCENTE X SEDE</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="insertar_docentexsede">
-                    </div>
-                    <div class="label_formulario">
-                        <label for="codigo">Código de Docente X Sede</label>
-                        <input type="text" class="input_formulario" id="codigo" name="codigo">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Código Docente</label>
-                        <input type="text" class="input_formulario" name="docente">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Código Sede</label>
-                        <input type="text" class="input_formulario" name="sede">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
 
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label">Código de Docente X Sede</label>
+                            <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ej: DX001"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="docente" class="form-label">Código Docente</label>
+                            <input type="text" class="form-control" id="docente" name="docente" placeholder="Ej: DOC123"
+                                required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="sede" class="form-label">Código Sede</label>
+                            <input type="text" class="form-control" id="sede" name="sede" placeholder="Ej: SED001"
+                                required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <script src="../vista/js/script_aplicacion.js"></script>

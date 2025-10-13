@@ -30,11 +30,12 @@
     <header id="header" class="bg-primary text-white p-3 header">
         <div id="contenedor_aplicacion" class="container-fluid d-flex justify-content-between align-items-center">
             <div id="logo">
-                <a href="Controlador.php?accion=inicio" class="text-black text-decoration-none fw-semibold fs-4">
+                <a href="Controlador.php?accion=aplicacion" class="text-black text-decoration-none fw-semibold fs-4">
                     BIENVENIDO AL CENTRO EDUCATIVO RURAL NICOLÁS DE FEDERMÁN
                 </a>
             </div>
             <div id="boton_abrir_menu">
+                
                 <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#contenedor_menu_aplicacion" aria-controls="contenedor_menu_aplicacion">
                     <i class="bi bi-list text-white fs-5"></i>
@@ -53,26 +54,34 @@
         <div id="menu_aplicacion" class="offcanvas-body p-0">
             <ul id="opciones_menu_aplicacion" class="list-unstyled m-0 p-0">
 
-                <li class="text-center my-3">
+                <?php if (session_status() === PHP_SESSION_NONE) {session_start();}?>
+                <li class="text-center my-3 position-relative">
                     <img src="../vista/imagenes/logo_aplicacion.png" id="logo_aplicacion" class="img-fluid"
                         style="max-width: 100px;">
-                </li>
 
+                    <?php if (isset($_SESSION['logueado']) && $_SESSION['logueado'] === true): ?>
+                    <span class="indicador-sesion" title="Sesión activa"></span>    
+
+                    <p class="mt-2 fw-bold usuario-logueado"><?php echo $_SESSION['usuario']; ?></p>
+                    <?php endif; ?>
+                </li>
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
                         <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Perfil</a></li>
                         <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Opciones</a></li>
-                        <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Cerrar Sesión</a></li>
+                        <li><a href="Controlador.php?accion=cerrar_session"
+                                class="d-block px-3 py-2 text-dark text-decoration-none">
+                            Cerrar Sesión</a></li>
                     </ul>
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -103,8 +112,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -127,7 +136,8 @@
 
                 <li><a href="Controlador.php?accion=modulos"
                         class="d-block px-3 py-2 text-dark text-decoration-none">Módulos</a></li>
-                <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Manual de Usuario</a></li>
+                <li><a href="Controlador.php?accion=manuales"
+                        class="d-block px-3 py-2 text-dark text-decoration-none">Manual de Usuario</a></li>
 
             </ul>
         </div>

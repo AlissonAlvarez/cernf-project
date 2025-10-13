@@ -60,8 +60,8 @@
                 </li>
 
                 <li id="submenu_informacion">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_informacion" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_informacion" aria-expanded="false">
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
@@ -72,8 +72,8 @@
                 </li>
 
                 <li id="submenu_gestioneducativa">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_gestioneducativa" aria-expanded="false">
                         Gestión Educativa <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_gestioneducativa" class="collapse list-unstyled ps-3">
@@ -104,8 +104,8 @@
                 </li>
 
                 <li id="submenu_herramientas">
-                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none"
-                        data-bs-toggle="collapse" data-bs-target="#opciones_herramientas" aria-expanded="false">
+                    <a href="#" class="d-block px-3 py-2 text-dark text-decoration-none" data-bs-toggle="collapse"
+                        data-bs-target="#opciones_herramientas" aria-expanded="false">
                         Herramientas <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_herramientas" class="collapse list-unstyled ps-3">
@@ -136,58 +136,77 @@
     </div>
 
     <!--==================================main==================================-->
-    <main class="main_crud">
+    <main class="main_crud bg-light  py-5">
+        <div class="container px-3 px-md-5">
+            <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="contenedor_formulario" id="contenedor_crud">
 
-            <div class="titulo_formulario">
-                <h2 align="center">Crear Acuerdo</h2><br>
-            </div>
+                <div
+                    class="card-header py-4 px-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <div>
+                        <h2 class="color_icon fw-bold mb-1">
+                            <i class="bi bi-file-earmark-text me-2"></i> Crear Acuerdo
+                        </h2>
+                        <p class="text-muted mb-0 small">Registrar un nuevo acuerdo en el sistema</p>
+                    </div>
 
-            <div class="botones_tabla">
-                <form action="" method="">
-                    <a href="Controlador.php?accion=modulo_acuerdos" title="Regresar" class="btn_tabla_f"><span
-                            class="icon-folder-open-o"></span></a>
-                </form>
+                    <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+                        <a href="Controlador.php?accion=modulo_acuerdos"
+                            class="btn btn-outline-secondary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-1"></i> Volver
+                        </a>
+                    </div>
+                </div>
 
-            </div>
 
-            <form class="form_formulario" id="" name="" action="Controlador.php" method="POST">
-                <fieldset>
-                    <legend>ACUERDO</legend>
-                    <div class="label_formulario">
+                <div class="card-form text-center p-4 p-md-5">
+                    <form action="Controlador.php" method="POST" class="text-start">
                         <input type="hidden" name="accion" value="insertar_acuerdos">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Código de Acuerdo</label>
-                        <input type="text" class="input_formulario" name="codigo">
-                    </div>
-                    <div class="label_formulario">
-                        <label>Tipo de Acuerdo</label>
-                        <div class="select_formulario" name="tipo">
-                            <select>
+
+                        <!-- Código del Acuerdo -->
+                        <div class="mb-4">
+                            <label for="codigo" class="form-label">Código de Acuerdo</label>
+                            <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ej: AC001"
+                                required>
+                        </div>
+
+                        <!-- Tipo de Acuerdo -->
+                        <div class="mb-4">
+                            <label for="tipo" class="form-label">Tipo de Acuerdo</label>
+                            <select class="form-select" id="tipo" name="tipo" required>
                                 <option value="">Seleccionar</option>
                                 <option value="Academico">Académico</option>
                                 <option value="Disciplinario">Disciplinario</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="label_formulario">
-                        <label>Observación</label>
-                        <textarea class="textarea_formulario" name="observacion"></textarea>
-                    </div>
-                    <div class="label_formulario">
-                        <label>Código del Observador</label>
-                        <input type="text" class="input_formulario" name="observador">
-                    </div>
-                    <div class="label_formulario">
-                        <input type="submit" class="input_submit_formulario" name="guardar" value="GUARDAR">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
 
+                        <!-- Observación -->
+                        <div class="mb-4">
+                            <label for="observacion" class="form-label">Observación</label>
+                            <textarea class="form-control" id="observacion" name="observacion" rows="4"
+                                placeholder="Escriba aquí la observación..." required></textarea>
+                        </div>
+
+                        <!-- Código del Observador -->
+                        <div class="mb-4">
+                            <label for="observador" class="form-label">Código del Observador</label>
+                            <input type="text" class="form-control" id="observador" name="observador"
+                                placeholder="Ej: OBS123" required>
+                        </div>
+
+                        <!-- Botón Guardar -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary border-0 btn-lg btn_modulos">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </main>
+
 
     <script src="../vista/js/script_aplicacion.js"></script>
     <script src="../vista/js/script_modulos.js"></script>

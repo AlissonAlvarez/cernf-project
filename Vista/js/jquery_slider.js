@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Simulamos un pequeño retardo para que el splash se vea bonito (2s)
+    setTimeout(() => {
+        document.getElementById("splash-screen").classList.add("hidden");
+    }, 2000); // puedes cambiar a 1500 o 3000 ms
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.querySelector(".back-to-top");
 
