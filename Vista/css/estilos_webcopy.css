@@ -773,7 +773,7 @@ video {
   border-radius: 24px;
   padding: 40px;
   max-width: 500px;
-  width: 100%;
+  width: 90%;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -931,18 +931,36 @@ textarea.form-control {
   top: 0px;
 }
 
-.formulario_ingresar, .formulario_validar {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 50%;
+.formulario_ingresar {
+  display: block;
+  width: 90%;
+  max-width: 500px; /* mismo ancho visual que el modal */
+  margin: 40px auto; /* centrado vertical y horizontal */
   padding: 30px;
-  min-height: 500px;
   background: var(--color_white);
   border: 2px solid var(--secondary_color);
-  border-radius: 24px;
-  bottom: 34px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s;
+}
+
+/* ====== CORRECCIÓN VISUAL PARA FORMULARIO EN MODAL ====== */
+
+.modal-content {
+  border: 2px solid var(--secondary_color);
+}
+
+#modalValidar .formulario_validar {
+  display: block !important;
+  width: 100%;
+  height: auto !important;
+  background: var(--color_white);
+}
+
+#modalValidar * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 9999 !important;
 }
 
 .contenedor_boton {
@@ -963,7 +981,7 @@ textarea.form-control {
 .contenedor_boton:before {
     content: "";
     width: 80%;
-    height: 100%;
+    height: 80%;
     position: absolute;
     border-radius: 8px;
     background: linear-gradient(90deg, rgba(91, 92, 91, 0.329), rgba(46, 46, 45, 0.3));
@@ -1020,7 +1038,7 @@ footer {
 .logo_f {
   background-color: var(--color_white);
   border-radius: 50%;
-  width: 34%;
+  width: 140px;
 }
 
 .logo_footer {

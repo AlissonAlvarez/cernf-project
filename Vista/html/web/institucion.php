@@ -121,7 +121,7 @@
                     <div class="tab-pane fade show active" id="mision" role="tabpanel" aria-labelledby="mision-tab">
                         <div class="row align-items-center">
                             <div class="col-md-4 text-center">
-                                <img src="../vista/imagenes/mision.png" alt="Misión" class="img-fluid rounded">
+                                <img src="../vista/imagenes/niños1.png" alt="Misión" class="img-fluid rounded">
                             </div>
                             <div class="col-md-8">
                                 <h4>Conoce nuestra Misión</h4>
@@ -143,7 +143,7 @@
                     <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
                         <div class="row align-items-center">
                             <div class="col-md-4 text-center">
-                                <img src="../vista/imagenes/vision.png" alt="Visión" class="img-fluid rounded">
+                                <img src="../vista/imagenes/niños7.png" alt="Visión" class="img-fluid rounded">
                             </div>
                             <div class="col-md-8">
                                 <h4>Conoce nuestra Visión</h4>
@@ -166,7 +166,7 @@
                     <div class="tab-pane fade" id="filosofia" role="tabpanel" aria-labelledby="filosofia-tab">
                         <div class="row align-items-center">
                             <div class="col-md-4 text-center">
-                                <img src="../vista/imagenes/filosofia.png" alt="Filosofía" class="img-fluid rounded">
+                                <img src="../vista/imagenes/niños3.jpg" alt="Filosofía" class="img-fluid rounded">
                             </div>
                             <div class="col-md-8">
                                 <h4>Conoce nuestra Filosofía</h4>
@@ -191,91 +191,109 @@
         <section class="seccion_persona">
             <h1 class="titulo">Nuestros Profesores</h1>
             <div class="container">
-                <div class="team-grid">
-                    <div class="persona_card highlighted">
-                        <img src="../vista/imagenes/directora-ines.png" class="persona_foto">
-                        <h4 class="persona_nombre">Inés Galindo Herrera</h4>
-                        <p class="persona_cargo">Directora</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card highlighted">
+                            <img src="../vista/imagenes/directora-ines.png" class="persona_foto">
+                            <h4 class="persona_nombre">Inés Galindo Herrera</h4>
+                            <p class="persona_cargo">Directora</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesora-andrea.png"class="persona_foto">
-                        <h4 class="persona_nombre">Andrea Soto</h4>
-                        <p class="persona_cargo">Profesora</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-globe"></i></a>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesora-andrea.png" class="persona_foto">
+                            <h4 class="persona_nombre">Andrea Soto</h4>
+                            <p class="persona_cargo">Profesora</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-globe"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesor-brandon.png" class="persona_foto">
-                        <h4 class="persona_nombre">Brandon Camacho</h4>
-                        <p class="persona_cargo">Profesor</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesor-brandon.png" class="persona_foto">
+                            <h4 class="persona_nombre">Brandon Camacho</h4>
+                            <p class="persona_cargo">Profesor</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesora-felisa.png" class="persona_foto">
-                        <h4 class="persona_nombre">Felisa Mayorga</h4>
-                        <p class="persona_cargo">Profesora</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-stack-overflow"></i></a>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesora-felisa.png" class="persona_foto">
+                            <h4 class="persona_nombre">Felisa Mayorga</h4>
+                            <p class="persona_cargo">Profesora</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-stack-overflow"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="team-grid">
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesor-hermisson.png" class="persona_foto">
-                        <h4 class="persona_nombre">Hermisson Arias</h4>
-                        <p class="persona_cargo">Profesor</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <div class="row g-4 mt-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesor-hermisson.png" class="persona_foto">
+                            <h4 class="persona_nombre">Hermisson Arias</h4>
+                            <p class="persona_cargo">Profesor</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesora-hilda.png" class="persona_foto">
-                        <h4 class="persona_nombre">Hilda Buendia</h4>
-                        <p class="persona_cargo">Profesora</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesora-hilda.png" class="persona_foto">
+                            <h4 class="persona_nombre">Hilda Buendia</h4>
+                            <p class="persona_cargo">Profesora</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesora-iveth.png" class="persona_foto">
-                        <h4 class="persona_nombre">Iveth Mary Valencia</h4>
-                        <p class="persona_cargo">Profesora</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesora-iveth.png" class="persona_foto">
+                            <h4 class="persona_nombre">Iveth Mary Valencia</h4>
+                            <p class="persona_cargo">Profesora</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="persona_card">
-                        <img src="../vista/imagenes/profesora-nancy.png" class="persona_foto">
-                        <h4 class="persona_nombre">Nancy Yolanda Pabón</h4>
-                        <p class="persona_cargo">Profesor</p>
-                        <div class="persona_social">
-                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="persona_card">
+                            <img src="../vista/imagenes/profesora-nancy.png" class="persona_foto">
+                            <h4 class="persona_nombre">Nancy Yolanda Pabón</h4>
+                            <p class="persona_cargo">Profesora</p>
+                            <div class="persona_social">
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,8 +312,8 @@
                     <div class="logo_f">
                         <img src="../vista/imagenes/logo.png" class="logo_footer">
                     </div>
-                    <p>Leading business consulting firm helping companies start, grow, and thrive in competitive markets
-                        worldwide.</p>
+                    <p>Institución educativa comprometida con la formación integral de niños y jóvenes, promoviendo
+                        valores, conocimiento y desarrollo en un entorno rural de calidad.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5 footer_informacion"></i></a>
                         <a href="#"><i class="bi bi-linkedin fs-5 footer_informacion"></i></a>

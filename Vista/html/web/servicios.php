@@ -86,146 +86,139 @@
 
         <!--================= 2. Seccion uno Servicios  =================-->
         <section class="blog-container seccion_servicios">
-            <h1 class="titulo">Nuestro Servicios</h1>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="servicio_card">
+            <h1 class="titulo">Nuestros Servicios</h1>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="servicio_card flex-fill h-100">
                         <div class="servicio_imagen">
-                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop&crop=top"
-                                alt="UI/UX Design workspace">
-                            <div class="servicio_tag">UI/UX Design</div>
-                            <button class="servicio_boton dark" 
-                                    data-bs-toggle="tooltip" 
-                                    data-bs-placement="top" 
-                                    title="Inscribirse" 
-                                    onclick="location.href='Controlador.php?accion=inscripcion'">
-                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
-                            </button>
-                        </div>
-                        <div class="servicio_contenido">
-                            <h3 class="servicio_titulo">Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
-                            <div class="card-meta">
-                                <span class="author">Jenny Smith</span>
-                                <span class="date">22 July 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="servicio_card">
-                        <div class="servicio_imagen">
-                            <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop&crop=center"
-                                alt="User Experience Design">
-                            <div class="servicio_tag">User Experience</div>
+                            <img src="../Vista/imagenes/oficina.png" alt="Oficina">
+                            <div class="servicio_tag">Oficina</div>
                             <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
                                 <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
                             </button>
                         </div>
                         <div class="servicio_contenido">
-                            <h3 class="servicio_titulo">Beyond Aesthetics: Crafting Intuitive UX</h3>
+                            <h3 class="servicio_titulo">Atención administrativa y gestión institucional</h3>
                             <div class="card-meta">
-                                <span class="author">Jenny Smith</span>
-                                <span class="date">22 July 2023</span>
+                                <span class="author">Departamento Administrativo</span>
+                                <span class="date">Actualizado 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="servicio_card">
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="servicio_card flex-fill h-100">
                         <div class="servicio_imagen">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center"
-                                alt="Design workspace">
-                            <div class="servicio_tag">Design</div>
+                            <img src="../Vista/imagenes/familia.png" alt="Atención a padres">
+                            <div class="servicio_tag">Atención a padres</div>
                             <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
                                 <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
                             </button>
                         </div>
                         <div class="servicio_contenido">
-                            <h3 class="servicio_titulo">Pixels & Insights: Unveiling the Art of UI/UX</h3>
+                            <h3 class="servicio_titulo">Comunicación y acompañamiento familiar</h3>
                             <div class="card-meta">
-                                <span class="author">Jenny Smith</span>
-                                <span class="date">22 July 2023</span>
+                                <span class="author">Área de Bienestar Escolar</span>
+                                <span class="date">Actualizado 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="servicio_card flex-fill h-100">
+                        <div class="servicio_imagen">
+                            <img src="../Vista/imagenes/transporte.png" alt="Transporte escolar">
+                            <div class="servicio_tag">Transporte escolar</div>
+                            <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
+                            </button>
+                        </div>
+                        <div class="servicio_contenido">
+                            <h3 class="servicio_titulo">Seguridad y puntualidad en el traslado de estudiantes</h3>
+                            <div class="card-meta">
+                                <span class="author">Coordinación de Transporte</span>
+                                <span class="date">Actualizado 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
 
         <!--================= 3. Seccion dos Servicios  =================-->
-
         <section class="blog-container seccion_servicios">
-            <div class="row g-4">
+            <div class="row g-4 align-items-stretch">
+
                 <div class="col-lg-4 col-md-6">
-                    <div class="servicio_card">
+                    <div class="servicio_card h-100">
                         <div class="servicio_imagen">
-                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop&crop=top"
-                                alt="UI/UX Design workspace">
-                            <div class="servicio_tag">UI/UX Design</div>
+                            <img src="../Vista/imagenes/niño-cp.png" alt="Tecnología Educativa">
+                            <div class="servicio_tag">Tecnología Educativa</div>
                             <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
-                                title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
+                                title="Conocer más" onclick="location.href='Controlador.php?accion=inscripcion'">
                                 <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
                             </button>
                         </div>
                         <div class="servicio_contenido">
-                            <h3 class="servicio_titulo">Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
+                            <h3 class="servicio_titulo">Innovación y herramientas digitales para el aprendizaje</h3>
                             <div class="card-meta">
-                                <span class="author">Jenny Smith</span>
-                                <span class="date">22 July 2023</span>
+                                <span class="author">Departamento de Tecnología Educativa</span>
+                                <span class="date">Actualizado 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="servicio_card">
+                    <div class="servicio_card h-100">
                         <div class="servicio_imagen">
-                            <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=250&fit=crop&crop=center"
-                                alt="User Experience Design">
-                            <div class="servicio_tag">User Experience</div>
+                            <img src="../Vista/imagenes/niña-m.png" alt="Alimentación escolar">
+                            <div class="servicio_tag">Alimentación escolar</div>
                             <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
                                 <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
                             </button>
                         </div>
                         <div class="servicio_contenido">
-                            <h3 class="servicio_titulo">Beyond Aesthetics: Crafting Intuitive UX</h3>
+                            <h3 class="servicio_titulo">Nutrición saludable para el bienestar estudiantil</h3>
                             <div class="card-meta">
-                                <span class="author">Jenny Smith</span>
-                                <span class="date">22 July 2023</span>
+                                <span class="author">Programa de Alimentación</span>
+                                <span class="date">Actualizado 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="servicio_card">
+                    <div class="servicio_card h-100">
                         <div class="servicio_imagen">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center"
-                                alt="Design workspace">
-                            <div class="servicio_tag">Design</div>
+                            <img src="../Vista/imagenes/niños-futbol.png" alt="Actividades extracurriculares">
+                            <div class="servicio_tag">Actividades extracurriculares</div>
                             <button class="servicio_boton dark" data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Inscribirse" onclick="location.href='Controlador.php?accion=inscripcion'">
                                 <i class="bi bi-hand-index-thumb fs-3 icono_servicio"></i>
                             </button>
                         </div>
                         <div class="servicio_contenido">
-                            <h3 class="servicio_titulo">Pixels & Insights: Unveiling the Art of UI/UX</h3>
+                            <h3 class="servicio_titulo">Espacios de arte, deporte y desarrollo integral</h3>
                             <div class="card-meta">
-                                <span class="author">Jenny Smith</span>
-                                <span class="date">22 July 2023</span>
+                                <span class="author">Coordinación Académica</span>
+                                <span class="date">Actualizado 2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
+
 
     <!--=================================footer=================================-->
 
@@ -236,8 +229,8 @@
                     <div class="logo_f">
                         <img src="../vista/imagenes/logo.png" class="logo_footer">
                     </div>
-                    <p>Leading business consulting firm helping companies start, grow, and thrive in competitive markets
-                        worldwide.</p>
+                    <p>Institución educativa comprometida con la formación integral de niños y jóvenes, promoviendo
+                        valores, conocimiento y desarrollo en un entorno rural de calidad.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5 footer_informacion"></i></a>
                         <a href="#"><i class="bi bi-linkedin fs-5 footer_informacion"></i></a>

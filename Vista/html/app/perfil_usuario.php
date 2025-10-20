@@ -244,7 +244,7 @@ if (!isset($_SESSION['logueado']) || $_SESSION['logueado'] !== true) {
 
                 <!-- Botones de acción -->
                 <div class="action-buttons">
-                    <a href="Controlador.php?accion=aplicacion" class="btn btn-custom btn-back">
+                    <a href="javascript:window.history.back();" class="btn btn-custom btn-back">
                         <i class="bi bi-arrow-left me-2"></i>Volver
                     </a>
                     <a href="Controlador.php?accion=cerrar_session" class="btn btn-custom btn-logout">
