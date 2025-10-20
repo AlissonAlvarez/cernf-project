@@ -79,29 +79,32 @@
             <video autoplay muted loop>
                 <source src="../vista/videos/niñas.mp4" type="video/mp4" />
             </video>
+
             <div class="contenedor_encabezado">
                 <div class="row align-items-center">
                     <div class="col-lg-12">
-                        <div class="texto_encabezado p-5">
+                        <div class="texto_encabezado p-5 mt-5">
                             <h3 class="mb-3" style="opacity: 0.8;">
                                 Bienvenido a nuestro
                             </h3>
                             <h1>Centro Educativo Rural Nicolás de Federmán</h1>
-                            <p>Empower Yourself with Quality Education and Lifelong Learning</p>
-                            <a class="nav-link" href="Controlador.php?accion=contacto"><button class="boton">Contacto
-                                </button></a>
-                            <div class="seccion_uno_stats">
+                            <p>Fortalece tu futuro con educación de calidad y aprendizaje para toda la vida.</p>
+                            <a class="nav-link" href="Controlador.php?accion=contacto">
+                                <button class="boton">Contacto</button>
+                            </a>
+
+                            <div class="seccion_uno_stats mt-4">
                                 <div class="stat-item">
-                                    <span class="stat-number">20+</span>
-                                    <span class="stat-label">Expert Instructors</span>
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">Docentes expertos</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-number">13k+</span>
-                                    <span class="stat-label">Happy Students</span>
+                                    <span class="stat-number">350+</span>
+                                    <span class="stat-label">Estudiantes</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-number">15k+</span>
-                                    <span class="stat-label">Live Classes</span>
+                                    <span class="stat-number">11+</span>
+                                    <span class="stat-label">Sedes Rurales</span>
                                 </div>
                             </div>
                         </div>
@@ -114,6 +117,7 @@
         <section class="seccion_dos">
             <h1 class="titulo">Información</h1>
             <div class="container">
+                <!-- Primer bloque -->
                 <div class="row align-items-center pb-5">
                     <div class="col-lg-6">
                         <img src="../vista/imagenes/nina.png" alt="" class="imagen_uno">
@@ -122,39 +126,50 @@
                         <div class="ps-lg-4">
                             <p class="section-subtitle">Forjando un futuro</p>
                             <h2 class="section-title text-start">de posibilidades</h2>
-                            <p class="mb-4">En el Centro Educativo Rural Nicolás de Federmán, creemos en el poder de la
+                            <p class="mb-4">
+                                En el Centro Educativo Rural Nicolás de Federmán, creemos en el poder de la
                                 educación para transformar vidas. Aquí, en el corazón de los llanos, cada niño tiene la
                                 oportunidad de descubrir su potencial, desarrollar sus talentos
-                                y construir un futuro lleno de posibilidades.</p>
-                            <p class="mb-4">Con valores de esfuerzo,
-                                creatividad y comunidad, guiamos a nuestros estudiantes en un camino de
+                                y construir un futuro lleno de posibilidades.
+                            </p>
+                            <p class="mb-4">
+                                Con valores de esfuerzo, creatividad y comunidad, guiamos a nuestros estudiantes en un
+                                camino de
                                 aprendizaje que les permitirá alcanzar sus sueños y aportar al desarrollo
-                                de su región.</p>
-
+                                de su región.
+                            </p>
                         </div>
                         <div class="d-flex justify-content-end">
                             <a href="Controlador.php?accion=institucion" class="btn boton">Saber más</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Segundo bloque (contenido único y original) -->
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="ps-lg-4">
-                            <p class="section-subtitle">Forjando un futuro</p>
-                            <h2 class="section-title text-start">de posibilidades</h2>
-                            <p class="mb-4">En el Centro Educativo Rural Nicolás de Federmán, creemos en el poder de la
-                                educación para transformar vidas. Aquí, en el corazón de los llanos, cada niño tiene la
-                                oportunidad de descubrir su potencial, desarrollar sus talentos
-                                y construir un futuro lleno de posibilidades.</p>
-                            <p class="mb-4">Con valores de esfuerzo,
-                                creatividad y comunidad, guiamos a nuestros estudiantes en un caminode
-                                aprendizaje que les permitirá alcanzar sus sueños y aportar aldesarrollo
-                                de su región.</p>
+                            <p class="section-subtitle">Educando con propósito</p>
+                            <h2 class="section-title text-start">En armonía con la naturaleza</h2>
+                            <p class="mb-4">
+                                Nuestro colegio no solo enseña conocimientos, sino también el respeto por la tierra que
+                                nos rodea.
+                                En cada clase, en cada proyecto y en cada jornada, fomentamos el amor por el entorno
+                                rural y el trabajo en equipo,
+                                formando jóvenes conscientes de su papel en el cuidado del planeta.
+                            </p>
+                            <p class="mb-4">
+                                A través de huertas escolares, actividades ecológicas y experiencias de aprendizaje
+                                vivencial,
+                                los estudiantes del Centro Educativo Rural Nicolás de Federmán aprenden que el
+                                conocimiento florece mejor
+                                cuando se cultiva con valores, compromiso y esperanza.
+                            </p>
                             <a href="Controlador.php?accion=institucion" class="btn boton">Saber más</a>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-end">
-                        <img src="../vista/imagenes/nina.png" alt="" class="imagen_uno">
+                        <img src="../vista/imagenes/niños7.png" alt="" class="imagen_uno">
                     </div>
                 </div>
             </div>
@@ -201,71 +216,77 @@
         <!--================= 4 Seccion Accesos =================-->
         <section class="py-5 bg-light">
             <div class="container">
-    <div class="text-center mb-5">
-        <h2 class="titulo">Enlaces de Interés</h2>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="seccion_acceso text-center">
-                <div class="service-icon mx-auto mb-3">
-                    <i class="bi bi-chat-dots fs-1 text-white"></i>
+                <div class="text-center mb-5">
+                    <h2 class="titulo">Enlaces de Interés</h2>
                 </div>
-                <h4>Business & Finance</h4>
-                <p>Comprehensive business and financial consulting to optimize your operations and profitability.</p>
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="seccion_acceso text-center">
+                            <div class="service-icon mx-auto mb-3">
+                                <i class="bi bi-chat-dots fs-1 text-white"></i>
+                            </div>
+                            <h4>Comunidad Educativa</h4>
+                            <p>Espacio de comunicación e interacción entre estudiantes, docentes y padres de familia.
+                            </p>
+                        </div>
+                    </div>
 
-        <div class="col-lg-4 mb-4">
-            <div class="seccion_acceso_uno text-center">
-                <div class="service-icon mx-auto mb-3">
-                    <i class="bi bi-bar-chart fs-1 text-success"></i>
-                </div>
-                <h4>Consumer Goods</h4>
-                <p>Specialized consulting for consumer goods companies to enhance market position and customer satisfaction.</p>
-            </div>
-        </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="seccion_acceso_uno text-center">
+                            <div class="service-icon mx-auto mb-3">
+                                <i class="bi bi-bar-chart fs-1 text-success"></i>
+                            </div>
+                            <h4>Desempeño Académico</h4>
+                            <p>Consulta de calificaciones, seguimiento académico y apoyo para el fortalecimiento del
+                                aprendizaje.</p>
+                        </div>
+                    </div>
 
-        <div class="col-lg-4 mb-4">
-            <div class="seccion_acceso_uno text-center">
-                <div class="service-icon mx-auto mb-3">
-                    <i class="bi bi-building-gear fs-1 text-success"></i>
-                </div>
-                <h4>Audit & Evaluation</h4>
-                <p>Thorough business audits and evaluations to identify opportunities for improvement and growth.</p>
-            </div>
-        </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="seccion_acceso_uno text-center">
+                            <div class="service-icon mx-auto mb-3">
+                                <i class="bi bi-building-gear fs-1 text-success"></i>
+                            </div>
+                            <h4>Gestión Institucional</h4>
+                            <p>Procesos administrativos y de gestión que garantizan el buen funcionamiento del colegio.
+                            </p>
+                        </div>
+                    </div>
 
-        <div class="col-lg-4 mb-4">
-            <div class="seccion_acceso_uno text-center">
-                <div class="service-icon mx-auto mb-3">
-                    <i class="bi bi-graph-up-arrow fs-1 text-success"></i>
-                </div>
-                <h4>Business Consulting</h4>
-                <p>End-to-end business consulting services tailored to your specific industry and market challenges.</p>
-            </div>
-        </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="seccion_acceso_uno text-center">
+                            <div class="service-icon mx-auto mb-3">
+                                <i class="bi bi-graph-up-arrow fs-1 text-success"></i>
+                            </div>
+                            <h4>Proyectos Pedagógicos</h4>
+                            <p>Iniciativas educativas que fomentan el desarrollo integral y la participación activa de
+                                los estudiantes.</p>
+                        </div>
+                    </div>
 
-        <div class="col-lg-4 mb-4">
-            <div class="seccion_acceso_uno text-center">
-                <div class="service-icon mx-auto mb-3">
-                    <i class="bi bi-bar-chart-line fs-1 text-success"></i>
-                </div>
-                <h4>Market Analysis</h4>
-                <p>Comprehensive market research and analysis to inform strategic decision-making and planning.</p>
-            </div>
-        </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="seccion_acceso_uno text-center">
+                            <div class="service-icon mx-auto mb-3">
+                                <i class="bi bi-bar-chart-line fs-1 text-success"></i>
+                            </div>
+                            <h4>Evaluación Institucional</h4>
+                            <p>Monitoreo y análisis del rendimiento académico e institucional para la mejora continua.
+                            </p>
+                        </div>
+                    </div>
 
-        <div class="col-lg-4 mb-4">
-            <div class="seccion_acceso_uno text-center">
-                <div class="service-icon mx-auto mb-3">
-                    <i class="bi bi-people fs-1 text-success"></i>
+                    <div class="col-lg-4 mb-4">
+                        <div class="seccion_acceso_uno text-center">
+                            <div class="service-icon mx-auto mb-3">
+                                <i class="bi bi-people fs-1 text-success"></i>
+                            </div>
+                            <h4>Participación y Convivencia</h4>
+                            <p>Fomento de valores, trabajo en equipo y convivencia escolar para una comunidad educativa
+                                armónica.</p>
+                        </div>
+                    </div>
                 </div>
-                <h4>Investment Management</h4>
-                <p>Professional investment management and advisory services to maximize your returns and minimize risks.</p>
             </div>
-        </div>
-    </div>
-</div>
         </section>
 
         <!--================= 5. Seccion Anuncio =================-->
@@ -292,45 +313,51 @@
                     <h2 class="titulo">Noticias Recientes</h2>
                 </div>
                 <div class="row">
-                    <!-- Card 1 -->
+                    <!-- Noticia 1 -->
                     <div class="col-lg-4 mb-4">
                         <div class="noticia_card">
                             <img src="../vista/imagenes/niños3.jpg" alt="Noticia 1" class="noticia_img">
                             <div class="p-3">
-                                <span class="text-muted small">March 15, 2024</span>
-                                <h5 class="mt-2">How to Scale Your Startup in 2024</h5>
-                                <p class="text-muted">Essential strategies for scaling your startup effectively in
-                                    today's competitive market.</p>
+                                <span class="text-muted small">15 de marzo de 2024</span>
+                                <h5 class="mt-2">Jornada de Lectura en el Aula</h5>
+                                <p class="text-muted">
+                                    Los estudiantes participaron en una jornada de lectura en la que compartieron
+                                    cuentos, reflexiones y fomentaron el amor por la lectura.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 2 -->
+                    <!-- Noticia 2 -->
                     <div class="col-lg-4 mb-4">
                         <div class="noticia_card">
                             <img src="../vista/imagenes/niños6.jpg" alt="Noticia 2" class="noticia_img">
                             <div class="p-3">
-                                <span class="text-muted small">March 10, 2024</span>
-                                <h5 class="mt-2">Digital Transformation Trends</h5>
-                                <p class="text-muted">Latest trends in digital transformation that every business should
-                                    consider.</p>
+                                <span class="text-muted small">10 de marzo de 2024</span>
+                                <h5 class="mt-2">Proyecto de Huerta Escolar</h5>
+                                <p class="text-muted">
+                                    Con la participación de toda la comunidad educativa, se dio inicio al proyecto de
+                                    huerta escolar para promover la sostenibilidad y el aprendizaje ambiental.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 3 -->
+                    <!-- Noticia 3 -->
                     <div class="col-lg-4 mb-4">
                         <div class="noticia_card">
                             <img src="../vista/imagenes/niños7.png" alt="Noticia 3" class="noticia_img">
                             <div class="p-3">
-                                <span class="text-muted small">March 5, 2024</span>
-                                <h5 class="mt-2">Innovation in Business Strategy</h5>
-                                <p class="text-muted">How to foster innovation within your organization and stay ahead
-                                    of competition.</p>
+                                <span class="text-muted small">5 de marzo de 2024</span>
+                                <h5 class="mt-2">Día de la Convivencia Escolar</h5>
+                                <p class="text-muted">
+                                    Una jornada llena de actividades lúdicas, deportivas y reflexivas para fortalecer
+                                    los valores de respeto y trabajo en equipo entre nuestros estudiantes.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <a href="#" class="btn boton">Saber más</a>
+                    <a href="#" class="btn boton">Ver más noticias</a>
                 </div>
             </div>
         </section>
@@ -345,8 +372,8 @@
                     <div class="logo_f">
                         <img src="../vista/imagenes/logo.png" class="logo_footer">
                     </div>
-                    <p>Leading business consulting firm helping companies start, grow, and thrive in competitive markets
-                        worldwide.</p>
+                    <p>Institución educativa comprometida con la formación integral de niños y jóvenes, promoviendo
+                        valores, conocimiento y desarrollo en un entorno rural de calidad.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5 footer_informacion"></i></a>
                         <a href="#"><i class="bi bi-linkedin fs-5 footer_informacion"></i></a>
@@ -384,7 +411,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4 footer_informacion">
-                <h5>Contacto</h5>
+                    <h5>Contacto</h5>
                     <p><i class="bi bi-telephone me-2"></i>+57-313-809-8754</p>
                     <p><i class="bi bi-envelope me-2"></i>cernf@gmail.com</p>
                     <p><i class="bi bi-geo-alt me-2"></i>Vereda El Encanto, Guamal</p>

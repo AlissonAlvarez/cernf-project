@@ -84,64 +84,64 @@
         </section>
 
         <div class="contenedor_cuenta container position-relative">
-            <h1 class="titulo">Accede a la plataforma</h1>
+    <h1 class="titulo text-center mb-5">Accede a la plataforma</h1>
 
-
-            <div class="contenedor_boton row justify-content-center position-relative mb-5">
-                <div class="contenedor_boton_ingresar col-md-5 text-center">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <button class="boton boton_ingresar" id="boton_ingresar">Ingresar</button>
-                </div>
-
-                <div class="contenedor_boton_validar col-md-5 text-center">
-                    <h3>¿Olvidaste tu contraseña?</h3>
-                    <button class="boton boton_validar" id="boton_validar">Validar</button>
-                </div>
+    <div class="contenedor_formulario row justify-content-center position-relative" style="transition: transform 0.5s ease;">
+        <!-- FORMULARIO INGRESAR -->
+        <form class="formulario_ingresar col-12 col-md-6" id="formulario_ingresar" name="formulario_ingresar"
+            action="Controlador.php" method="POST" style="transition: opacity 0.5s;">
+            
+            <div class="titulo_formulario mb-4">
+                <h2 class="text-center">Iniciar Sesión</h2>
             </div>
 
-            <div class="contenedor_formulario row position-relative" style="transition: transform 0.5s ease;">
+            <div class="form-floating mb-3">
+                <input type="hidden" id="accion" name="accion" value="iniciar_sesion">
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
+                <label for="usuario">Usuario</label>
+                <span class="mensaje_error"></span>
+            </div>
 
-                <form class="formulario_ingresar col-12 col-md-5" id="formulario_ingresar" name="formulario_ingresar"
-                    action="Controlador.php" method="POST" style="transition: opacity 0.5s;">
-                    <div class="titulo_formulario mb-4">
-                        <h2 class="text-center">Iniciar Sesión</h2>
-                    </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <label for="contrasena">Contraseña</label>
+                <span class="mensaje_error"></span>
+            </div>
 
-                    <div class="form-floating mb-3">
-                        <input type="hidden" id="accion" name="accion" value="iniciar_sesion">
-                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario"
-                            required>
-                        <label for="usuario">Usuario</label>
-                        <span class="mensaje_error"></span>
-                    </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="check" checked>
+                <label class="form-check-label" for="check">Recordarme</label>
+            </div>
 
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="contrasena" name="contrasena"
-                            placeholder="Contraseña" required>
-                        <label for="contrasena">Contraseña</label>
-                        <span class="mensaje_error"></span>
-                    </div>
+            <div class="mb-3">
+                <!-- Abre la modal -->
+                <a href="#" class="btn text-success" data-bs-toggle="modal" data-bs-target="#modalValidar" id="boton_validar">
+                    ¿Olvidaste tu contraseña?
+                </a>
+            </div>
 
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="check" checked>
-                        <label class="form-check-label" for="check">Recordarme</label>
-                    </div>
+            <div class="mb-3">
+                <input type="submit" id="login" name="boton_ingresar" class="btn btn-send w-100" value="Ingresar">
+            </div>
+        </form>
+    </div>
+</div>
 
-                    <div class="mb-3">
-                        <input type="submit" id="login" name="boton_ingresar" class="btn btn-send w-100"
-                            value="Ingresar">
-                    </div>
-                </form>
+<!-- MODAL VALIDAR -->
+<div class="modal fade" id="modalValidar" tabindex="-1" aria-labelledby="modalValidarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4" style="border-radius: 1rem;">
+            <div class="modal-header border-0">
+                <h2 class="modal-title text-center w-100" id="modalValidarLabel">Recuperar Contraseña</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
 
-                <form class="formulario_validar col-12 col-md-5" id="formulario_validar" name="formulario_validar"
+            <div class="modal-body">
+                <form class="formulario_validar" id="formulario_validar" name="formulario_validar"
                     action="" method="" style="transition: opacity 0.5s;">
-                    <div class="titulo_formulario mb-4">
-                        <h2 class="text-center">Recuperar Contraseña</h2>
-                    </div>
-
+                    
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="tipo_documento" name="tipo_documento"
-                            placeholder="Tipo de documento">
+                        <select class="form-select form-control" id="tipo_documento" name="tipo_documento" placeholder="Tipo de documento">
                             <option value="">Seleccionar</option>
                             <option value="">Cédula de Ciudadanía</option>
                             <option value="">Tarjeta de Identidad</option>
@@ -151,8 +151,7 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="input_formulario" name="input_formulario"
-                            placeholder="Número de documento">
+                        <input type="text" class="form-control" id="input_formulario" name="input_formulario" placeholder="Número de documento">
                         <label for="input_formulario">Número de documento</label>
                         <span class="mensaje_error"></span>
                     </div>
@@ -160,11 +159,19 @@
                     <div class="mb-3">
                         <input type="submit" class="btn btn-send w-100" value="Validar">
                     </div>
+
+                    <div class="text-center mt-3">
+                        <!-- Cierra la modal y vuelve al login -->
+                        <a href="#" class="btn text-success" data-bs-dismiss="modal" id="boton_ingresar_modal">
+                            ¿Ya tienes una cuenta?
+                        </a>
+                    </div>
                 </form>
-
             </div>
-
         </div>
+    </div>
+</div>
+
 
 
 
@@ -181,8 +188,7 @@
                     <div class="logo_f">
                         <img src="../vista/imagenes/logo.png" class="logo_footer">
                     </div>
-                    <p>Leading business consulting firm helping companies start, grow, and thrive in competitive markets
-                        worldwide.</p>
+                    <p>Institución educativa comprometida con la formación integral de niños y jóvenes, promoviendo valores, conocimiento y desarrollo en un entorno rural de calidad.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5 footer_informacion"></i></a>
                         <a href="#"><i class="bi bi-linkedin fs-5 footer_informacion"></i></a>

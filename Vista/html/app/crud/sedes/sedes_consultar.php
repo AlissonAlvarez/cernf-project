@@ -65,7 +65,7 @@
                         Información <span class="float-end">&#9660;</span>
                     </a>
                     <ul id="opciones_informacion" class="collapse list-unstyled ps-3">
-                        <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Perfil</a></li>
+                        <li><a href="Controlador.php?accion=perfil_usuario" class="d-block px-3 py-2 text-dark text-decoration-none">Perfil</a></li>
                         <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Opciones</a></li>
                         <li><a href="#" class="d-block px-3 py-2 text-dark text-decoration-none">Cerrar Sesión</a></li>
                     </ul>

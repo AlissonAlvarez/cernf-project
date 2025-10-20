@@ -166,8 +166,7 @@
                     <div class="logo_f">
                         <img src="../vista/imagenes/logo.png" class="logo_footer">
                     </div>
-                    <p>Leading business consulting firm helping companies start, grow, and thrive in competitive markets
-                        worldwide.</p>
+                    <p>Institución educativa comprometida con la formación integral de niños y jóvenes, promoviendo valores, conocimiento y desarrollo en un entorno rural de calidad.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5 footer_informacion"></i></a>
                         <a href="#"><i class="bi bi-linkedin fs-5 footer_informacion"></i></a>

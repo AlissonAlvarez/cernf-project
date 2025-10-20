@@ -94,52 +94,82 @@
 
                 <form id="formInscripcion">
                     <div class="row g-3">
+
                         <div class="col-md-6 form-floating">
                             <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo" required>
-                            <label for="nombre">Nombre Completo</label>
+                            <label for="nombre" class="p-3 opacity-80">Nombre Completo</label>
                         </div>
 
                         <div class="col-md-6 form-floating">
                             <input type="text" class="form-control" id="apellido" placeholder="Apellidos" required>
-                            <label for="apellido">Apellidos</label>
+                            <label for="apellido" class="p-3 opacity-80">Apellidos</label>
+                        </div>
+
+                        <!-- Tipo de documento -->
+                        <div class="col-md-6 form-floating">
+                            <select class="form-select form-control" id="tipoDocumento" required style="height: 58px;">
+                                <option value="">Seleccione un tipo</option>
+                                <option value="cc">Cédula de Ciudadanía</option>
+                                <option value="ti">Tarjeta de Identidad</option>
+                                <option value="ce">Cédula de Extranjería</option>
+                                <option value="rc">Registro Civil</option>
+                            </select>
+                            <label for="tipoDocumento" class="p-3 opacity-80">Tipo de Documento</label>
+                        </div>
+
+                        <!-- Número de documento -->
+                        <div class="col-md-6 form-floating">
+                            <input type="number" class="form-control" id="numeroDocumento"
+                                placeholder="Número de Documento" required>
+                            <label for="numeroDocumento" class="p-3 opacity-80">Número de Documento</label>
                         </div>
 
                         <div class="col-md-6 form-floating">
                             <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico"
                                 required>
-                            <label for="correo">Correo Electrónico</label>
+                            <label for="correo" class="p-3 opacity-80">Correo Electrónico</label>
                         </div>
 
                         <div class="col-md-6 form-floating">
                             <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
-                            <label for="telefono">Teléfono</label>
+                            <label for="telefono" class="p-3 opacity-80">Teléfono</label>
+                        </div>
+
+                        <!-- Tipo de servicio -->
+                        <div class="col-md-6 form-floating">
+                            <select class="form-select form-control" id="tipoServicio" required style="height: 58px;">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="oficina">Oficina</option>
+                                <option value="atencion_padres">Atención a padres</option>
+                                <option value="transporte">Transporte</option>
+                                <option value="tecnologia">Tecnología</option>
+                                <option value="alimentacion">Alimentación escolar</option>
+                                <option value="actividades">Actividades extracurriculares</option>
+                            </select>
+                            <label for="tipoServicio" class="p-3 opacity-80">Tipo de Servicio</label>
                         </div>
 
                         <div class="col-md-6 form-floating">
-                            <input type="number" class="form-control" id="edad" placeholder="Edad" required>
-                            <label for="edad">Edad</label>
-                        </div>
-
-                        <div class="col-md-6 form-floating">
-                            <select class="form-select" id="grado" required>
+                            <select class="form-select form-control" id="grado" required style="height: 58px;">
                                 <option value="">Seleccione un grado</option>
                                 <option value="preescolar">Preescolar</option>
                                 <option value="primaria">Primaria</option>
                                 <option value="secundaria">Secundaria</option>
                             </select>
-                            <label for="grado">Grado</label>
+                            <label for="grado" class="p-3 opacity-80">Grado</label>
                         </div>
 
                         <div class="col-12 form-floating">
                             <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
-                            <label for="direccion">Dirección</label>
+                            <label for="direccion" class="p-3 opacity-80">Dirección</label>
                         </div>
 
                         <div class="col-12 form-floating">
                             <textarea class="form-control" id="observaciones" placeholder="Observaciones"
                                 style="height: 120px;"></textarea>
-                            <label for="observaciones">Observaciones</label>
+                            <label for="observaciones" class="p-3 opacity-80">Observaciones</label>
                         </div>
+
                     </div>
 
                     <div class="text-center mt-4">
@@ -161,8 +191,8 @@
                     <div class="logo_f">
                         <img src="../vista/imagenes/logo.png" class="logo_footer">
                     </div>
-                    <p>Leading business consulting firm helping companies start, grow, and thrive in competitive markets
-                        worldwide.</p>
+                    <p>Institución educativa comprometida con la formación integral de niños y jóvenes, promoviendo
+                        valores, conocimiento y desarrollo en un entorno rural de calidad.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5 footer_informacion"></i></a>
                         <a href="#"><i class="bi bi-linkedin fs-5 footer_informacion"></i></a>
